@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">미디어 셀렉션</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul class="dep1">
+            <li>
+              <img src="/admin/src/images/ico_news.svg" alt="" class="dep1_ico">
+              <a href="/admin/news/news.html">뉴스&오피니언</a>
+              <ul class="dep2">
+                <li><a href="/admin/news/news.html">데일리 뉴스</a></li>
+                <li><a href="/admin/news/opinion.html">오피니언</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_research.svg" alt="" class="dep1_ico">
+              <a href="/admin/research/insight.html">리서치</a>
+              <ul class="dep2">
+                <li><a href="/admin/research/insight.html">우리금융 인사이트</a></li>
+                <li><a href="/admin/research/data.html">국내 외 연구자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_market.svg" alt="" class="dep1_ico">
+              <a href="/admin/market/case_study.html">마켓</a>
+              <ul class="dep2">
+                <li><a href="/admin/market/case_study.html">케이스 스터디</a></li>
+                <li><a href="/admin/market/company.html">컴퍼니&피플</a></li>
+                <li><a href="/admin/market/indicator.html">지표</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_media.svg" alt="" class="dep1_ico">
+              <a href="/admin/media/talk.html">미디어 셀렉션</a>
+              <ul class="dep2">
+                <li><a href="/admin/media/talk.html">강연</a></li>
+                <li><a href="/admin/media/book.html">책소개</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <div id="contents">
+        <!-- 오피니언 -->
+        <div class="con_wrap">
+          <div class="write_inner">
+            <form action="">
+              <div class="write_wrap">
+                <div class="write_box">
+                  <p class="tit imp">제목</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">저자</p>
+                  <input type="text" class="write_slot" required>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">외부 링크</p>
+                  <input type="text" class="write_slot" placeholder="http://" required>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">출처</p>
+                  <input type="text" class="write_slot" required>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">발행일</p>
+                  <input type="date" class="write_slot"></input>
+                </div>
+
+                <div class="write_box ty_half ty_indent">
+                  <p class="tit imp">이미지</p>
+                  <label class="write_slot file_upload ty_img">
+                    <span class="file_name"></span>
+                    <input type="file" hidden></input>
+                  </label>
+                  <p class="dsc">* PNG, JPG, GIF 파일(715x470픽셀 이상)만 업로드 가능합니다.</p>
+                </div>
+              </div>
+              <div class="btn_wrap ty_right">
+                <a href="" class="btn back_btn ty_gray">취소</a>
+                <input type="submit" value="저장" class="btn ty_ci" data-btn="pop_save">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- TOAST TOAST TOAST TOAST -->
+        <!-- TOAST : 필수 기입 사항 입력되지 않았을 때 -->
+        <div class="toast_popup" data-toggle="toast_imp">
+          <div class="txt_box">
+            <span class="ico"></span>
+            <p>필수 기입 사항이 입력되지 않았습니다. 다시 확인해 주세요.</p>
+          </div>
+          <button type="button" class="close_btn" data-btn="toast_imp"></button>
+        </div>
+        <!-- //TOAST TOAST TOAST TOAST -->
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+
+      <!-- POPUP POPUP POPUP POPUP -->
+      <!-- POPUP : 저장 완료 -->
+      <div class="popup pop_save size_s" data-toggle="pop_save">
+        <p class="info">성공적으로 저장되었습니다</p>
+        <div class="btn_wrap ty_right">
+          <a href="/admin/login/" class="btn ty_ci">확인</a>
+        </div>
+      </div>
+
+      <!-- POPUP : 작성페이지에서 작성 중 이탈할 때 -->
+      <div class="popup pop_save size_l" data-toggle="pop_cancel">
+        <p class="info">저장되지 않은 내용이 있습니다. <br>현재 작성 중인 내용을 저장하지 않고 목록으로 이동하시겠습니까?</p>
+        <div class="btn_wrap ty_right">
+          <button type="button" class="btn ty_white popup_close">취소</button>
+          <a href="" class="btn ty_ci">확인</a>
+        </div>
+      </div>
+      <!-- //POPUP POPUP POPUP POPUP -->
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+</body>
+
+</html>

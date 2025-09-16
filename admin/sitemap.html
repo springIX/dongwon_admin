@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">사이트맵</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul class="dep1">
+            <li>
+              <img src="/admin/src/images/ico_news.svg" alt="" class="dep1_ico">
+              <a href="/admin/news/news.html">뉴스&오피니언</a>
+              <ul class="dep2">
+                <li><a href="/admin/news/news.html">데일리 뉴스</a></li>
+                <li><a href="/admin/news/opinion.html">오피니언</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_research.svg" alt="" class="dep1_ico">
+              <a href="/admin/research/insight.html">리서치</a>
+              <ul class="dep2">
+                <li><a href="/admin/research/insight.html">우리금융 인사이트</a></li>
+                <li><a href="/admin/research/data.html">국내 외 연구자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_market.svg" alt="" class="dep1_ico">
+              <a href="/admin/market/case_study.html">마켓</a>
+              <ul class="dep2">
+                <li><a href="/admin/market/case_study.html">케이스 스터디</a></li>
+                <li><a href="/admin/market/company.html">컴퍼니&피플</a></li>
+                <li><a href="/admin/market/indicator.html">지표</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_media.svg" alt="" class="dep1_ico">
+              <a href="/admin/media/talk.html">미디어 셀렉션</a>
+              <ul class="dep2">
+                <li><a href="/admin/media/talk.html">강연</a></li>
+                <li><a href="/admin/media/book.html">책소개</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <style>
+        .site_map {
+          width: 700rem;
+          max-width: 100%;
+          text-align: left;
+          margin-top: 40rem;
+        }
+
+        th,
+        td {
+          padding: 10rem;
+        }
+
+        th {
+          background-color: #2860F120;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      </style>
+      <div id="contents">
+        <!-- 오피니언 -->
+        <div class="con_wrap">
+          <strong>* 모든 경로는 admin폴더 기준입니다.</strong>
+          <table class="site_map" border="1" style=" border-top: 2px solid #000;">
+            <colgroup>
+              <col width="120px" />
+              <col width="140px" />
+              <col width="110px" />
+              <col />
+            </colgroup>
+            <tr>
+              <th rowspan="3">기타</th>
+              <td colspan="2">인풋 컴포넌트</td>
+              <td><a href="component_write.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">팝업창 컴포넌트</td>
+              <td><a href="component_popup.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">메일 폼</td>
+              <td><a href="mailform.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">로그인</th>
+              <td colspan="2">로그인</td>
+              <td><a href="login/index.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">비밀번호 변경</td>
+              <td><a href="login/change_password.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th>관리자</th>
+              <td colspan="2">관리자 설정</td>
+              <td><a href="account/index.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th>메인</th>
+              <td style="background-color: #2860F110;" colspan="2">메인(대시보드)</td>
+              <td style="background-color: #2860F110;"><a href="index.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th rowspan="6">뉴스&오피니언</th>
+              <td rowspan="3">뉴스</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="news/news.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="news/write_news.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="news/edit_news.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td rowspan="3">오피니언</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="news/opinion.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="news/write_opinion.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="news/edit_opinion.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th rowspan="6">리서치</th>
+              <td rowspan="3">우리금융 인사이트</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="research/insight.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="research/write_insight.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="research/edit_insight.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td rowspan="3">국내 외 연구자료</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="research/data.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="research/write_data.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="research/edit_data.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th rowspan="9">마켓</th>
+              <td rowspan="3">케이스 스터디</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="market/case_study.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="market/write_case_study.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="market/edit_case_study.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td rowspan="3">컴퍼니&피플</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="market/company.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="market/write_company.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="market/edit_company.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td rowspan="3">지표</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="market/indicator.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="market/write_indicator.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="market/edit_indicator.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <th rowspan="6">미디어 셀렉션</th>
+              <td rowspan="3">강연</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="media/talk.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="media/write_talk.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="media/edit_talk.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td rowspan="3">책소개</td>
+              <td>리스트 게시판</td>
+              <td colspan="2"><a href="media/book.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>작성 게시판</td>
+              <td><a href="media/write_book.html" target="_blank"></a></td>
+            </tr>
+            <tr>
+              <td>수정 게시판</td>
+              <td><a href="media/edit_book.html" target="_blank"></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+  <script>
+    $('.site_map a').each(function () {
+      let link = $(this).attr('href');
+      $(this).html(link);
+    });
+  </script>
+</body>
+
+</html>

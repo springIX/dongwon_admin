@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="login_wrap login p_center">
+      <img src="/admin/src/images/logo.svg" alt="" class="login_logo">
+      <form action="">
+        <!-- write_box에 caution이 붙으면 인풋 테두리가 빨간색으로 변하고, 경고메세지가 뜹니다-->
+        <div class="write_box caution">
+          <input type="text" maxlength="100" class="write_slot" required placeholder="아이디">
+          <p class="dsc">아이디를 확인해 주세요.</p>
+        </div>
+        <div class="write_box caution">
+          <label class="write_slot password">
+            <input type="password" required placeholder="비밀번호">
+            <button type="button" class="pw_show_btn"></button>
+          </label>
+          <p class="dsc">비밀번호를 확인해 주세요.</p>
+        </div>
+        <button type="button" class="password_reset" data-btn="pop_pw_find">비밀번호 재발급 요청</button>
+        <div class="btn_wrap ty_full">
+          <input type="submit" value="로그인" class="login_btn btn ty_black">
+        </div>
+      </form>
+    </div>
+
+    <!-- POPUP : 비밀번호 재설정 이메일 -->
+    <div class="popup size_m pop_pw_find" data-toggle="pop_pw_find">
+      <strong class="popup_tit">비밀번호를 잊어버리셨나요?</strong>
+      <p class="info2">아이디와 등록한 이메일을 입력해주세요. <br>등록한 메일주소로 임시비밀번호를 전송합니다.</p>
+      <form action="">
+        <div class="write_box caution">
+          <input type="text" class="write_slot" placeholder="아이디" required>
+          <p class="dsc">아이디를 확인해 주세요.</p>
+        </div>
+        <div class="write_box caution">
+          <input type="text" class="write_slot" placeholder="이메일" required>
+          <p class="dsc">이메일을 확인해 주세요.</p>
+        </div>
+        <div class="btn_wrap ty_right">
+          <button type="button" class="btn ty_white popup_close">취소</button>
+          <input type="submit" class="btn ty_black" value="발급신청">
+        </div>
+      </form>
+    </div>
+
+    <!-- POPUP : 메일전송 완료 -->
+    <!-- <div class="popup pop_save size_s" data-toggle="pop_mail">
+      <p class="info">이메일이 전송되었습니다.</p>
+      <div class="btn_wrap ty_right">
+        <a href="/admin/login/" class="btn ty_ci">확인</a>
+      </div>
+    </div> -->
+
+    <!-- POPUP : 임시비번으로 로그인하면 뜨는 팝업 -->
+    <div class="popup temp_pw size_l on" data-toggle="pop_temp_pw">
+      <p class="info">비밀번호의 보안 강화를 위해 비밀번호를 변경해주세요.</p>
+      <div class="btn_wrap ty_right">
+        <button data-btn="pop_temp_pw" class="btn ty_white">취소</button>
+        <a href="/admin/index.html" class="btn ty_black">확인</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+</body>
+
+</html>

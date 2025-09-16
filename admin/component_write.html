@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">관리자 홈</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul class="dep1">
+            <li>
+              <img src="/admin/src/images/ico_news.svg" alt="" class="dep1_ico">
+              <a href="/admin/news/news.html">뉴스&오피니언</a>
+              <ul class="dep2">
+                <li><a href="/admin/news/news.html">데일리 뉴스</a></li>
+                <li><a href="/admin/news/opinion.html">오피니언</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_research.svg" alt="" class="dep1_ico">
+              <a href="/admin/research/insight.html">리서치</a>
+              <ul class="dep2">
+                <li><a href="/admin/research/insight.html">우리금융 인사이트</a></li>
+                <li><a href="/admin/research/data.html">국내 외 연구자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_market.svg" alt="" class="dep1_ico">
+              <a href="/admin/market/case_study.html">마켓</a>
+              <ul class="dep2">
+                <li><a href="/admin/market/case_study.html">케이스 스터디</a></li>
+                <li><a href="/admin/market/company.html">컴퍼니&피플</a></li>
+                <li><a href="/admin/market/indicator.html">지표</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="/admin/src/images/ico_media.svg" alt="" class="dep1_ico">
+              <a href="/admin/media/talk.html">미디어 셀렉션</a>
+              <ul class="dep2">
+                <li><a href="/admin/media/talk.html">강연</a></li>
+                <li><a href="/admin/media/book.html">책소개</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <div id="contents">
+        <!-- 오피니언 -->
+        <div class="con_wrap">
+          <div class="write_inner">
+            <form action="">
+              <div class="dep2_tab">
+                <a href="" class="on">데일리 뉴스</a>
+                <a href="">오피니언</a>
+              </div>
+              <div class="dep2_tab ty_full">
+                <a href="" class="on">데일리 뉴스</a>
+                <a href="">오피니언</a>
+              </div>
+
+              <div class="write_wrap">
+
+                <div class="write_box">
+                  <p class="tit imp">체크박스</p>
+                  <div class="list_check">
+                    <label>
+                      <input type="checkbox">
+                      <span>유료</span>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>유료</span>
+                    </label>
+                  </div>
+                  <p class="dsc">최대 100자까지 입력 가능 (<span>46</span>/100)</p>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">라디오박스</p>
+                  <div class="list_check ty_radio">
+                    <label>
+                      <input type="radio" name="radio">
+                      <span>유료</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="radio">
+                      <span>유료</span>
+                    </label>
+                  </div>
+                  <p class="dsc">최대 100자까지 입력 가능 (<span>46</span>/100)</p>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">텍스트</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc">최대 100자까지 입력 가능 (<span>46</span>/100)</p>
+                </div>
+
+                <!-- .write_box에 클래스 caution이 붙으면 경고인풋으로 활성화 됩니다. -->
+                <div class="write_box caution">
+                  <p class="tit imp">필수입력 경고</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                  <p class="dsc">최대 100자까지 입력 가능 (<span>46</span>/100)</p>
+                </div>
+
+                <div class="write_box ty_half ty_indent">
+                  <p class="tit">셀렉트 박스</p>
+                  <select class="write_slot">
+                    <option value="">탄소시장</option>
+                    <option value="">탄소시장</option>
+                    <option value="">탄소시장</option>
+                  </select>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">텍스트 에어리어</p>
+                  <textarea class="write_slot"></textarea>
+                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit">파일 업로드</p>
+                  <label class="write_slot file_upload">
+                    <span class="file_name"></span>
+                    <input type="file" hidden></input>
+                  </label>
+                  <p class="dsc">* PNG, JPG, GIF 파일만 업로드 가능합니다.</p>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">이미지 업로드</p>
+                  <label class="write_slot file_upload ty_img">
+                    <span class="file_name"></span>
+                    <input type="file" hidden></input>
+                  </label>
+                  <p class="dsc">* PNG, JPG, GIF 파일(520x392픽셀 이상)만 업로드 가능합니다.</p>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">비밀번호</p>
+                  <label class="write_slot password">
+                    <input type="password" required>
+                    <button type="button" class="pw_show_btn"></button>
+                  </label>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit">달력</p>
+                  <input type="date" class="write_slot"></input>
+                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
+                </div>
+              </div>
+              <div class="btn_wrap ty_right">
+                <a href="" class="btn back_btn ty_gray">취소</a>
+                <input type="submit" value="확인" class="btn ty_ci">
+                <button type="button" class="btn ty_white">수정</button>
+                <div class="btn ty_black">추가</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+</body>
+
+</html>
