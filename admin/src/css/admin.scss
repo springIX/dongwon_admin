@@ -76,15 +76,26 @@ $hd : 80rem;
 #admin_contents{ display: flex; height: calc(100% - $hd);}
 
 /********* LNB *********/
-#lnb{ width: $lnb; border-right: 1px solid $black2; padding: 68rem 20rem; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between; overflow-y: auto;
+#lnb{ width: $lnb; border-right: 1px solid $black2; padding: 20rem; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between; overflow-y: auto; font-weight: 400;
   nav{
-    .dep1{ 
-      > li{ padding-left: 48rem; position: relative; margin-bottom: 28rem;
-        &:not(:last-child){border-bottom: 1px solid $black2;}
-        .dep1_ico{ position: absolute; left: 12rem; top: -4px; width: 24rem;}
-        > a{ margin-bottom: 27rem;}
-        .dep2{
-          li{ margin-bottom: 16rem; font-weight: 400;}
+    > ul{ 
+      > li{
+        + li{ margin-top: 4rem;}
+        &.on{
+          .dep1{ background-color: rgba($color: $color-ci, $alpha: 6%); color: $color-ci; font-weight: 500;
+          img{ filter: none;}
+          }
+          .dep2{ display: block;}
+        }
+        .dep1{ display: flex; align-items: center; gap: 12rem; padding: 12rem; border-radius: 4rem;
+          img{ width: 24rem; filter: brightness(0);}
+        }
+        .dep2{ display: none; padding: 12rem 0rem 16rem 49rem; border-bottom: 1px solid #e1e1e1;
+          li{
+            + li{ margin-top: 16rem;}
+            &.on{ color: $color-ci;}
+            &.close{ touch-action: none; pointer-events: none; color: #666;}
+          }
         }
       }
     }
