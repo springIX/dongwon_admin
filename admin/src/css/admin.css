@@ -293,8 +293,21 @@
 .search_filter_wrap {
   display: flex;
   gap: 20rem;
-  align-items: center;
+  align-items: end;
   margin-bottom: 24rem;
+  position: relative;
+}
+.search_filter_wrap .search_box {
+  display: flex;
+  gap: 8rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.search_filter_wrap .search_box .sub_tit {
+  font-size: clamp(10px, 12rem, 999rem);
+  color: #111;
+  white-space: nowrap;
 }
 .search_filter_wrap .input_search {
   width: 220rem;
@@ -304,7 +317,7 @@
 }
 .search_filter_wrap .date_range {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 6rem;
 }
 .search_filter_wrap .date_range input {
@@ -312,6 +325,11 @@
   padding: 13rem 26rem;
   border: 1px solid #E1E1E1;
   border-radius: 4rem;
+}
+.search_filter_wrap .date_range .sub_tit {
+  font-size: clamp(10px, 12rem, 999rem);
+  color: #111;
+  white-space: nowrap;
 }
 .search_filter_wrap .date_range span {
   font-size: clamp(10px, 14rem, 999rem);

@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">리서치</h2>
+      <h2 class="title">미디어룸 관리</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -58,8 +58,8 @@
                 미디어룸 관리
               </div>
               <ul class="dep2">
-                <li><a href="/admin/media/contents.html">콘텐츠룸</a></li>
-                <li><a href="/admin/media/news.html">뉴스룸</a></li>
+                <li><a href="/admin/news/contents.html">콘텐츠룸</a></li>
+                <li><a href="/admin/news/news.html">뉴스룸</a></li>
               </ul>
             </li>
             <li>
@@ -114,65 +114,98 @@
 
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
-        <!-- 뉴스&오피니언 -->
+        <!-- 콘텐츠룸 -->
         <div class="con_wrap">
-          <div class="dep2_tab">
-            <a href="insight.html" class="on">우리금융 인사이트</a>
-            <a href="data.html">국내 외 연구자료</a>
-          </div>
           <div class="board_table">
+            
+            <div class="search_filter_wrap">
+              <!-- 검색어 입력 -->
+              <input type="text" class="input_search" placeholder="검색어를 입력해 주세요.">
+            
+              <!-- 발행 기간 -->
+              <div class="date_range">
+                <div>
+                  <input type="date" class="date_start" >
+                  <span>~</span>
+                  <input type="date" class="date_end">
+                </div>
+              </div>
+            
+              <!-- 기간 버튼 -->
+               <div class="period_button_wrap">
+                 <button type="button" class="btn ty_white period_button">1주전</button>
+                 <button type="button" class="btn ty_white period_button">1개월전</button>
+                 <button  type="button" class="btn ty_white period_button">3개월전</button>
+               </div>
+            
+              <!-- 검색 버튼 -->
+              <button type="button" class="btn ty_black btn_search">검색</button>
+            
+              <!-- 새로고침 버튼 -->
+              <button type="button" class="btn btn_refresh">
+                <span></span>
+              </button>
+            </div>
+            
+            
             <div class="btn_wrap ty_right">
-              <button type="button" class="btn ty_white" data-btn="pop_excel">엑셀 업로드</button>
-              <a href="write_insight.html" class="btn ty_ci">글쓰기</a>
+              <a href="write_news.html" class="btn ty_ci">새 포스트 등록</a>
+              <button type="button" class="btn ty_light_gray">삭제</button>
+              <button type="button" class="btn ty_white">공개</button>
+              <button type="button" class="btn ty_white">비공개</button>
             </div>
             <form action="">
               <div class="board_wrap">
-                <div class="table_wrap">
+                <div class="table_wrap introduction_table">
                   <div class="t_head">
                     <ul>
-                      <li class="col_chk"><input type="checkbox" class="chk_all"></th>
-                      <li class="col_main">메인</th>
-                      <li class="col_title">제목</th>
-                      <li class="col_writer">작성자</th>
-                      <li class="col_modify">날짜</th>
-                      <li class="col_hits">수정</th>
+                      <li class="col_chk"><input type="checkbox" class="chk_all"></li>
+                      <li class="col_main">번호</li>
+                      <li class="col_title">제목</li>
+                      <li class="col_file">첨부파일</li>
+                      <li class="col_public">공개여부</li>
+                      <li class="col_registration">등록일</li>
+                      <li class="col_occurrence">발생일시</li>
+                      <li class="col_modify">수정일</li>
+                      <li class="col_writer">작성자</li>
                     </ul>
                   </div>
                   <div class="t_body">
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
-                      <li class="col_title paid"><a href="">화제의 K-소스! 비비드키친 수출 담당자와 토크 | 반차내고와써요 EP.09</a>
-                      </li>
-                      <li class="col_writer">신동림</li>
+                      <li class="col_title"><a href="">화제의 K-소스! 비비드키친 수출 담당자와 토크 | 반차내고와써요 EP.09</a>
+                        <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_hits"><a href="edit_insight.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
-                      <li class="col_title paid"><a href="">[D's 플레이어] 국민음료 쿨피스 보유🧃본격 동원 유제품 자랑 대회 🎉</a></li>
-                      <li class="col_writer">신동림</li>
+                      <li class="col_title"><a href="">[D's 플레이어] 국민음료 쿨피스 보유🧃본격 동원 유제품 자랑 대회 🎉</a></li>
+                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_hits"><a href="edit_insight.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
                       <li class="col_title"><a href="">동원맛.zip: 전국 사업장 맛집 지도 프로젝트｜하이D라디오📣 - 8월</a></li>
-                      <li class="col_writer">신동림</li>
+                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_hits"><a href="edit_insight.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="btn_wrap ty_both">
-                <button type="button" class="btn ty_black">삭제</button>
-                <input type="submit" class="btn ty_gray" value="변경 저장">
               </div>
             </form>
             <div class="board_pagin f_center">
@@ -209,122 +242,6 @@
         <!-- //TOAST TOAST TOAST TOAST -->
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
-
-      <!-- POPUP POPUP POPUP POPUP -->
-      <!-- POPUP : 엑셀 업로드 -->
-      <div class="popup pop_excel size_l" data-toggle="pop_excel">
-        <strong class="popup_tit">엑셀 업로드</strong>
-        <form action="">
-          <div class="write_box excel_upload">
-            <p class="tit">엑셀</p>
-            <label class="write_slot file_upload">
-              <span class="file_name"></span>
-              <input type="file" hidden></input>
-            </label>
-          </div>
-          <div class="img_upload">
-            <!-- 이미지 끌어오면 업로드되는 영역 -->
-            <div class="img_upload_slot">
-              <img src="/admin/src/images/ico_img.svg" alt="" class="img_ico">
-              <div class="txt_box taC">
-                <p>이미지 파일을 마우스로 끌어 오세요</p>
-                <span>* PNG, JPG, GIF 파일(270x203픽셀 이상)만 업로드 가능합니다.</span>
-              </div>
-              <label class="img_upload_btn taC">
-                <input type="file" hidden>
-                <strong>파일선택</strong>
-              </label>
-            </div>
-
-            <!-- 이미지 선택하면 뜨는 이미지 업로드 리스트(로딩). 
-              * 위의 파일선택(input[type="file"])으로 이미지 업로드하면 해당화면이 노출됩니다. 
-            -->
-            <div class="img_upload_list" style="display: none;">
-              <ul>
-                <li>
-                  <div class="thumb_box">
-                    <img src="/src/images/common/thumb_img1.jpg" alt="">
-                  </div>
-                  <div class="txt_box">
-                    <p class="file_name">0_0.png</p>
-                    <div class="progress_bar"><i style="width: 30%;"></i></div>
-                  </div>
-                  <button type="button" class="close_btn"></button>
-                </li>
-                <li>
-                  <div class="thumb_box">
-                    <img src="/src/images/common/thumb_img1.jpg" alt="">
-                  </div>
-                  <div class="txt_box">
-                    <p class="file_name">0_0.png</p>
-                    <div class="progress_bar"><i style="width: 30%;"></i></div>
-                  </div>
-                  <button type="button" class="close_btn"></button>
-                </li>
-                <li>
-                  <div class="thumb_box">
-                    <img src="/src/images/common/thumb_img1.jpg" alt="">
-                  </div>
-                  <div class="txt_box">
-                    <p class="file_name">0_0.png</p>
-                    <div class="progress_bar"><i style="width: 30%;"></i></div>
-                  </div>
-                  <button type="button" class="close_btn"></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="btn_wrap ty_right">
-            <button type="button" class="btn ty_white popup_close">취소</button>
-            <a href="/admin/login/" class="btn ty_ci">저장</a>
-          </div>
-        </form>
-      </div>
-
-      <!-- POPUP : 엑셀 업로드 (이미지 업로드 없는) -->
-      <div class="popup pop_excel size_l" data-toggle="pop_only_excel">
-        <strong class="popup_tit">엑셀 업로드</strong>
-        <form action="">
-          <div class="write_box excel_upload">
-            <p class="tit">엑셀</p>
-            <label class="write_slot file_upload">
-              <span class="file_name"></span>
-              <input type="file" hidden></input>
-            </label>
-          </div>
-          <div class="btn_wrap ty_right">
-            <button type="button" class="btn ty_white popup_close">취소</button>
-            <button type="submit" class="btn ty_ci">저장</button>
-          </div>
-        </form>
-      </div>
-
-      <!-- POPUP : 엑셀 팝업창에서 이미지 업로드 중 팝업 닫을 때 -->
-      <div class="popup pop_save size_l" data-toggle="pop_cancel_excel">
-        <p class="info">첨부된 엑셀 및 이미지를 저장하지 않고 창을 닫으시겠습니까? <br>저장하지 않은 내용은 복구할 수 없습니다.</p>
-        <div class="btn_wrap ty_right">
-          <button type="button" class="btn ty_white popup_close">취소</button>
-          <button type="button" class="btn ty_ci popup_close" data-btn="pop_excel">확인</button>
-        </div>
-      </div>
-
-      <!-- POPUP : 저장 완료 -->
-      <div class="popup pop_save size_s" data-toggle="pop_save">
-        <p class="info">성공적으로 저장되었습니다</p>
-        <div class="btn_wrap ty_right">
-          <a href="/admin/login/" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-
-      <!-- POPUP : 삭제 확인 -->
-      <div class="popup pop_save size_s" data-toggle="pop_delete">
-        <p class="info">삭제하시겠습니까?</p>
-        <div class="btn_wrap ty_right">
-          <button type="button" class="btn ty_white popup_close">취소</button>
-          <a href="" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-      <!-- //POPUP POPUP POPUP POPUP -->
     </main>
   </div>
 
