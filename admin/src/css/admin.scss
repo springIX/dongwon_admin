@@ -157,10 +157,15 @@ $hd : 80rem;
 }
 
 // SEARCH FILTER
-.search_filter_wrap {display: flex; gap: 20rem; align-items: center; margin-bottom: 24rem;
-  .input_search { width: 220rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
-  .date_range { display: flex; align-items: center; gap: 6rem;
+.search_filter_wrap {display: flex; gap: 20rem; align-items: end; margin-bottom: 24rem; position: relative;
+  .search_box {display: flex; gap: 8rem; flex-direction: column; justify-content: flex-start; align-items: flex-start;
+    .sub_tit { @include font-size(12rem); color: #111; white-space: nowrap;}
+  }
+  .input_search { width: 220rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem;
+  }
+  .date_range { display: flex; flex-direction: column; gap: 6rem;
     input { width: 165rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
+    .sub_tit { @include font-size(12rem); color: #111; white-space: nowrap;}
     span { @include font-size(14rem); color: #666; }
     .date_picker_btn { width: 32rem; height: 32rem; background: url(/admin/src/images/ico_calendar.svg)no-repeat center center / contain; cursor: pointer;}
   }
