@@ -23,6 +23,11 @@ $(function () {
     }
   }, 100);
 
+  /********* LNB *********/
+  $('#lnb li:not(.on) .dep1').click(function () {
+    $(this).siblings('.dep2').slideToggle(300);
+  });
+
   /********* 메인노출 여부버튼 토글링 *********/
   $('.main_view_btn').click(function () {
     $(this).toggleClass('on');

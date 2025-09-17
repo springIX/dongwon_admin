@@ -129,33 +129,54 @@
 #lnb {
   width: 300rem;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 68rem 20rem;
+  padding: 20rem;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
-}
-#lnb nav .dep1 > li {
-  padding-left: 48rem;
-  position: relative;
-  margin-bottom: 28rem;
-}
-#lnb nav .dep1 > li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-#lnb nav .dep1 > li .dep1_ico {
-  position: absolute;
-  left: 12rem;
-  top: -4px;
-  width: 24rem;
-}
-#lnb nav .dep1 > li > a {
-  margin-bottom: 27rem;
-}
-#lnb nav .dep1 > li .dep2 li {
-  margin-bottom: 16rem;
   font-weight: 400;
+}
+#lnb nav > ul > li + li {
+  margin-top: 4rem;
+}
+#lnb nav > ul > li.on .dep1 {
+  background-color: rgba(0, 101, 189, 0.06);
+  color: #0065BD;
+  font-weight: 500;
+}
+#lnb nav > ul > li.on .dep1 img {
+  filter: none;
+}
+#lnb nav > ul > li.on .dep2 {
+  display: block;
+}
+#lnb nav > ul > li .dep1 {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  padding: 12rem;
+  border-radius: 4rem;
+}
+#lnb nav > ul > li .dep1 img {
+  width: 24rem;
+  filter: brightness(0);
+}
+#lnb nav > ul > li .dep2 {
+  display: none;
+  padding: 12rem 0rem 16rem 49rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+#lnb nav > ul > li .dep2 li + li {
+  margin-top: 16rem;
+}
+#lnb nav > ul > li .dep2 li.on {
+  color: #0065BD;
+}
+#lnb nav > ul > li .dep2 li.close {
+  touch-action: none;
+  pointer-events: none;
+  color: #666;
 }
 #lnb .acoount_menu ul li {
   margin-top: 28rem;
@@ -216,7 +237,7 @@
   width: 112rem;
   display: inline-block;
   text-align: center;
-  padding: 13rem;
+  padding: 15rem;
   border-radius: 4rem;
   cursor: pointer;
   color: #ffffff;
