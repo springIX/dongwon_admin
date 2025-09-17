@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">관리자 홈</h2>
+      <h2 class="title">그룹소개 자료실</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -115,7 +115,62 @@
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
         <!-- 오피니언 -->
-        <div class="con_wrap">
+        <div class="con_wrap max_1000">
+          <div class="write_inner">
+            <form action="">
+              <p class="write_tit">새 포스트 등록</p>
+
+              <div class="write_wrap">
+                <div class="write_box caution">
+                  <p class="tit imp">제목</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc gray">최대 50자까지 입력 가능 (0/50)</p>
+                  <p class="dsc">필수 입력값입니다.</p>
+                </div>
+
+                <div class="write_box ty_half ty_indent caution">
+                  <p class="tit imp">첨부파일</p>
+                  <label class="file_upload">
+                    <span class="write_slot file_name"></span>
+                    <input type="file" hidden required></input>
+                    <div class="write_slot file_btn">파일 추가</div>
+                  </label>
+                  <p class="dsc gray">최대 1개까지 업로드 가능 (5MB 이하)​</p>
+                  <p class="dsc">지원하지 않는 파일 형식입니다. (허용 형식: PDF, EXCEL, DOCX, JPG, PNG)</p>
+                  <div class="thumb_box"></div>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">내용</p>
+                  <div class="editor_area"></div>
+                </div>
+
+                <div class="write_box ty_half">
+                  <p class="tit imp">발행 일자</p>
+                  <input type="datetime-local" class="write_slot"></input>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">공개 여부</p>
+                  <div class="list_check">
+                    <label>
+                      <input type="radio" name="comment" checked>
+                      <span>공개</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="comment">
+                      <span>비공개</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="btn_wrap">
+                <a href="" class="btn back_btn ty_gray">취소</a>
+                <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
@@ -124,6 +179,10 @@
 
   <script src="/admin/src/js/jquery.js"></script>
   <script src="/admin/src/js/admin.js"></script>
+  <script>
+    $('#lnb nav > ul > li').eq(1).addClass('on');
+    $('#lnb nav > ul > li').eq(1).find('.dep2 li').eq(0).addClass('on');
+  </script>
 </body>
 
 </html>
