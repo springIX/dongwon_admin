@@ -290,15 +290,14 @@
 
 .search_filter_wrap {
   display: flex;
-  gap: 12;
+  gap: 20rem;
   align-items: center;
   margin-bottom: 24rem;
 }
 .search_filter_wrap .input_search {
   width: 220rem;
-  height: 40rem;
-  padding: 0 12px;
-  border: 1px solid #ddd;
+  padding: 13rem 26rem;
+  border: 1px solid #E1E1E1;
   border-radius: 4rem;
 }
 .search_filter_wrap .date_range {
@@ -307,10 +306,9 @@
   gap: 6rem;
 }
 .search_filter_wrap .date_range input {
-  width: 120rem;
-  height: 40rem;
-  padding: 0 12rem;
-  border: 1px solid #ddd;
+  width: 165rem;
+  padding: 13rem 26rem;
+  border: 1px solid #E1E1E1;
   border-radius: 4rem;
 }
 .search_filter_wrap .date_range span {
@@ -322,6 +320,31 @@
   height: 32rem;
   background: url(/admin/src/images/ico_calendar.svg) no-repeat center center/contain;
   cursor: pointer;
+}
+.search_filter_wrap button {
+  border: 1px solid #E1E1E1;
+}
+.search_filter_wrap .btn_search {
+  width: 160rem;
+}
+.search_filter_wrap .btn_refresh {
+  vertical-align: middle;
+  padding: 12rem;
+  border: 1px solid #000;
+}
+.search_filter_wrap .btn_refresh span {
+  width: 18rem;
+  height: 18rem;
+  background: url(/admin/src/images/ico_refresh.svg) no-repeat center/contain;
+  display: block;
+}
+.search_filter_wrap .period_button_wrap {
+  display: flex;
+  gap: 12rem;
+}
+.search_filter_wrap .period_button_wrap .period_button.active {
+  border-color: #0065BD;
+  border-width: 1px;
 }
 
 input::placeholder {
@@ -415,27 +438,33 @@ input[type=text]:read-only {
 .board_table .table_wrap ul li {
   display: flex;
   align-items: center;
-  width: 155rem;
   flex-shrink: 0;
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
 }
 .board_table .table_wrap .t_body ul:hover {
   background-color: #fafafa;
 }
 .board_table .table_wrap .col_chk {
-  width: 96rem;
+  width: 4.63%;
   padding-left: 24rem;
+  box-sizing: border-box;
 }
 .board_table .table_wrap .col_main {
-  width: 96rem;
+  width: 9%;
 }
 .board_table .table_wrap .col_public {
-  width: 96rem;
+  width: 6.68%;
+}
+.board_table .table_wrap .col_registration, .board_table .table_wrap .col_occurrence, .board_table .table_wrap .col_modify, .board_table .table_wrap .col_writer {
+  width: 11.57%;
+}
+.board_table .table_wrap .col_hits {
+  width: 7%;
 }
 .board_table .table_wrap .col_title {
-  width: 100%;
+  width: 26.41%;
   padding-right: 20rem;
-  flex-shrink: 1;
 }
 .board_table .table_wrap .col_title a, .board_table .table_wrap .col_title span {
   display: inline-block;

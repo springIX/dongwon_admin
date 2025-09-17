@@ -157,12 +157,20 @@ $hd : 80rem;
 }
 
 // SEARCH FILTER
-.search_filter_wrap {display: flex; gap: 12; align-items: center; margin-bottom: 24rem;
-  .input_search { width: 220rem; height: 40rem; padding: 0 12px; border: 1px solid #ddd; border-radius: 4rem; }
+.search_filter_wrap {display: flex; gap: 20rem; align-items: center; margin-bottom: 24rem;
+  .input_search { width: 220rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
   .date_range { display: flex; align-items: center; gap: 6rem;
-    input { width: 120rem; height: 40rem; padding: 0 12rem; border: 1px solid #ddd; border-radius: 4rem; }
+    input { width: 165rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
     span { @include font-size(14rem); color: #666; }
     .date_picker_btn { width: 32rem; height: 32rem; background: url(/admin/src/images/ico_calendar.svg)no-repeat center center / contain; cursor: pointer;}
+  }
+  button{border: 1px solid #E1E1E1;}
+  .btn_search {width: 160rem;}
+  .btn_refresh {vertical-align: middle; padding: 12rem; border: 1px solid #000;;
+  span {width: 18rem; height: 18rem; background: url(/admin/src/images/ico_refresh.svg) no-repeat center/contain; display: block;}
+  }
+  .period_button_wrap {display: flex; gap: 12rem;
+    .period_button.active {border-color: #0065BD; border-width: 1px;}
   }
 }
 
@@ -212,14 +220,16 @@ input{
   .table_wrap{ width: 100%; text-align: left;  border-top: 2px solid $black;
     input,button{ display: block;}
     ul{ display: flex; min-height: 60rem;
-      li{ display: flex; align-items: center; width: 155rem; flex-shrink: 0;  border-bottom: 1px solid #ccc;}
+      li{ display: flex; align-items: center; flex-shrink: 0;  border-bottom: 1px solid #ccc; box-sizing: border-box;}
     }
     .t_body ul:hover{ background-color: #fafafa;}
 
-    .col_chk{ width:96rem;padding-left: 24rem;}
-    .col_main{ width:96rem;}
-    .col_public{ width:96rem;}
-    .col_title{ width:100%; padding-right: 20rem; flex-shrink: 1;
+    .col_chk{ width:4.63%;padding-left: 24rem; box-sizing: border-box;}
+    .col_main{ width:9%;}
+    .col_public{ width:6.68%;}
+    .col_registration, .col_occurrence, .col_modify, .col_writer { width:11.57%;}
+    .col_hits { width:7%;}
+    .col_title{ width:26.41%; padding-right: 20rem;
       a, span{ display: inline-block; max-width: 450rem; @include ellip(1);}
       a:hover{ text-decoration: underline;}
       &.paid a{ padding:1px 0 1px 22rem; background: url(/admin/src/images/ico_paid.svg)no-repeat left top / auto 100%;}

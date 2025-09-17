@@ -123,4 +123,21 @@ $(function () {
     e.preventDefault();
     history.back();
   });
+
+  /********* 검색 기간 버튼 *********/
+  const periodButtons = document.querySelectorAll('.period_button');
+
+  periodButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const isActive = button.classList.contains('active');
+
+      periodButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      if (!isActive) {
+        button.classList.add('active');
+      }
+    });
+  });
 });
