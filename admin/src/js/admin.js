@@ -53,8 +53,35 @@ $(function () {
   /********* 파일 업로드 인풋 커스텀 *********/
   $('input[type="file"]').each(function () {
     $(this).on('change', function () {
-      const fileName = this.files[0] ? this.files[0].name : '선택된 파일 없음';
+      const file = this.files[0];
+      const fileName = file ? file.name : '선택된 파일 없음';
+
+      // 파일명 표시
       $(this).siblings('.file_name').text(fileName);
+
+      if (file) {
+        // 이미지 파일만 허용 (png, jpg, jpeg)
+        const validTypes = ['image/png', 'image/jpg', 'image/jpeg'];
+        if (!validTypes.includes(file.type)) {
+          alert('이미지 파일(png, jpg)만 업로드 가능합니다.');
+          $(this).val(''); // 선택 초기화
+          $(this).closest('.write_box').find('.thumb_box').css('background-image', '');
+          return;
+        }
+
+        // 미리보기 (덮어쓰기)
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          $(this)
+            .closest('.write_box')
+            .find('.thumb_box')
+            .css('background-image', `url(${e.target.result})`);
+        }.bind(this);
+        reader.readAsDataURL(file);
+      } else {
+        // 파일 없으면 썸네일 초기화
+        $(this).closest('.write_box').find('.thumb_box').css('background-image', '');
+      }
     });
   });
 
