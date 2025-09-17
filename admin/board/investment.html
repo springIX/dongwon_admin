@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">미디어룸 관리</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_media.svg" alt="">
+                미디어룸 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/news/contents.html">콘텐츠룸</a></li>
+                <li><a href="/admin/news/news.html">뉴스룸</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_board.svg" alt="">
+                게시판 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/board/introduction.html">그룹소개 자료실</a></li>
+                <li><a href="/admin/board/sustainability.html">지속가능경영 보고서</a></li>
+                <li><a href="/admin/board/investment.html">투자정보</a></li>
+                <li class="close"><a href="/admin/board/disclosure.html">공시정보</a></li>
+                <li class="close"><a href="/admin/board/announcement.html">공고</a></li>
+                <li class="close"><a href="/admin/board/management.html">경영자료</a></li>
+                <li class="close"><a href="/admin/board/governance.html">지배구조보고서</a></li>
+                <li class="close"><a href="/admin/board/ir.html">IR자료실</a></li>
+                <li><a href="/admin/board/notice.html">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/admin/banner/index.html" class="dep1">
+                <img src="/admin/src/images/ico_banner.svg" alt="">
+                배너 관리
+              </a>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_site.svg" alt="">
+                사이트 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/site/affiliate.html">계열사 관리</a></li>
+                <li><a href="/admin/site/html_page.html">HTML 페이지 관리</a></li>
+                <li><a href="/admin/site/hashtag.html">해시태그 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_operate.svg" alt="">
+                운영 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/operate/admin.html">관리자 계정</a></li>
+                <li><a href="/admin/operate/ip.html">접속 IP</a></li>
+                <li><a href="/admin/operate/arrangement.html">배치 작업</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <div id="contents">
+        <!-- 콘텐츠룸 -->
+        <div class="con_wrap">
+          <div class="dep2_tab">
+            <a href="introduction.html">그룹소개 자료실</a>
+            <a href="sustainability.html">지속가능경영 보고서</a>
+            <a href="investment.html" class="on">투자정보</a>
+            <a href="notice.html">공지사항</a>
+          </div>
+          <div class="board_table">
+            
+            <div class="search_filter_wrap">
+              <!-- 검색어 입력 -->
+              <input type="text" class="input_search" placeholder="검색어를 입력해 주세요.">
+            
+              <!-- 발행 기간 -->
+              <div class="date_range">
+                <div>
+                  <input type="date" class="date_start" >
+                  <span>~</span>
+                  <input type="date" class="date_end">
+                </div>
+              </div>
+            
+              <!-- 기간 버튼 -->
+               <div class="period_button_wrap">
+                 <button type="button" class="btn ty_white period_button">1주전</button>
+                 <button type="button" class="btn ty_white period_button">1개월전</button>
+                 <button  type="button" class="btn ty_white period_button">3개월전</button>
+               </div>
+            
+              <!-- 검색 버튼 -->
+              <button type="button" class="btn ty_black btn_search">검색</button>
+            
+              <!-- 새로고침 버튼 -->
+              <button type="button" class="btn btn_refresh">
+                <span></span>
+              </button>
+            </div>
+            
+            
+            <div class="btn_wrap ty_right">
+              <a href="write_news.html" class="btn ty_ci">새 포스트 등록</a>
+              <button type="button" class="btn ty_light_gray">삭제</button>
+              <button type="button" class="btn ty_white">공개</button>
+              <button type="button" class="btn ty_white">비공개</button>
+            </div>
+            <form action="">
+              <div class="board_wrap">
+                <div class="table_wrap introduction_table">
+                  <div class="t_head">
+                    <ul>
+                      <li class="col_chk"><input type="checkbox" class="chk_all"></li>
+                      <li class="col_main">번호</li>
+                      <li class="col_title">제목</li>
+                      <li class="col_file">첨부파일</li>
+                      <li class="col_public">공개여부</li>
+                      <li class="col_registration">등록일</li>
+                      <li class="col_occurrence">발생일시</li>
+                      <li class="col_modify">수정일</li>
+                      <li class="col_writer">작성자</li>
+                    </ul>
+                  </div>
+                  <div class="t_body">
+                    <ul>
+                      <li class="col_chk"><input type="checkbox"></li>
+                      <li class="col_main">1</li>
+                      <li class="col_title"><a href="">클린테크 스타트업 Graphyte, 탄소 제거 솔루션 확장을 위해 3,000만 달러 모금 클린테크</a>
+                        <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
+                      <li class="col_modify">2024. 02. 26</li>
+                      <li class="col_writer">super admin</li>
+                    </ul>
+                    <ul>
+                      <li class="col_chk"><input type="checkbox"></li>
+                      <li class="col_main">1</li>
+                      <li class="col_title"><a href="">EU, 중국산 바이오 디젤에 관세부과 예정</a></li>
+                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
+                      <li class="col_modify">2024. 02. 26</li>
+                      <li class="col_writer">super admin</li>
+                    </ul>
+                    <ul>
+                      <li class="col_chk"><input type="checkbox"></li>
+                      <li class="col_main">1</li>
+                      <li class="col_title"><a href="">GRI와 TNFD, 두 가지 표준을 모두 사용해 기업 보고를 돕기 위한 가이드 출시</a></li>
+                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
+                      <li class="col_modify">2024. 02. 26</li>
+                      <li class="col_writer">super admin</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="board_pagin f_center">
+              <a href="" class="pagin_btn prv_end disabled"></a>
+              <a href="" class="pagin_btn prv disabled"></a>
+              <span class="pagin_num">1</span>
+              <a href="" class="pagin_num">2</a>
+              <a href="" class="pagin_num">3</a>
+              <a href="" class="pagin_num">4</a>
+              <a href="" class="pagin_num">5</a>
+              <a href="" class="pagin_btn nxt"></a>
+              <a href="" class="pagin_btn nxt_end"></a>
+            </div>
+          </div>
+        </div>
+        <!-- TOAST TOAST TOAST TOAST -->
+        <!-- TOAST : 메인노출 체크갯수 초과시 알림 -->
+        <div class="toast_popup" data-toggle="toast_main_view">
+          <div class="txt_box">
+            <span class="ico"></span>
+            <p>메인에는 <span>5</span>개의 항목만 표시됩니다.</p>
+          </div>
+          <button type="button" class="close_btn" data-btn="toast_main_view"></button>
+        </div>
+
+        <!-- TOAST : 메인에 표시되어야 할 게시글갯수보다 적게 체크했을 때 -->
+        <div class="toast_popup" data-toggle="toast_main_view_select">
+          <div class="txt_box">
+            <span class="ico"></span>
+            <p>메인에 표시할 <span>2</span>개의 항목을 모두 선택해 주세요.</p>
+          </div>
+          <button type="button" class="close_btn" data-btn="toast_main_view_select"></button>
+        </div>
+        <!-- //TOAST TOAST TOAST TOAST -->
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+</body>
+
+</html>

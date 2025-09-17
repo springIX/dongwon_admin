@@ -175,6 +175,7 @@ $hd : 80rem;
 }
 
 
+
 // INPUT
 input{
   &::placeholder{ color: #999;}
@@ -229,6 +230,7 @@ input{
     .col_public{ width:6.68%;}
     .col_registration, .col_occurrence, .col_modify, .col_writer { width:11.57%;}
     .col_hits { width:7%;}
+    .col_file { width:12.98%;}
     .col_title{ width:26.41%; padding-right: 20rem;
       a, span{ display: inline-block; max-width: 450rem; @include ellip(1);}
       a:hover{ text-decoration: underline;}
@@ -257,8 +259,12 @@ input{
         } 
       }
     }
+    &.introduction_table {
+      .col_title { width: 20.44%;}
+    }
   }
 }
+
 
 .board_gallery{
   .board_wrap{ border-top: 2px solid $black; position: relative;

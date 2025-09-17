@@ -463,6 +463,9 @@ input[type=text]:read-only {
 .board_table .table_wrap .col_hits {
   width: 7%;
 }
+.board_table .table_wrap .col_file {
+  width: 12.98%;
+}
 .board_table .table_wrap .col_title {
   width: 26.41%;
   padding-right: 20rem;
@@ -520,6 +523,9 @@ input[type=text]:read-only {
 }
 .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_chk, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_public, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_summation, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_hits {
   border-bottom: none;
+}
+.board_table .table_wrap.introduction_table .col_title {
+  width: 20.44%;
 }
 
 .board_gallery .board_wrap {
