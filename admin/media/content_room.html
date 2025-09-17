@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">뉴스&오피니언</h2>
+      <h2 class="title">미디어룸 관리</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -93,74 +93,98 @@
 
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
-        <!-- 뉴스&오피니언 -->
+        <!-- 콘텐츠룸 -->
         <div class="con_wrap">
           <div class="dep2_tab">
-            <a href="news.html" class="on">데일리 뉴스</a>
-            <a href="opinion.html">오피니언</a>
+            <a href="content_room.html" class="on">콘텐츠룸</a>
+            <a href="news_room.html">뉴스룸</a>
           </div>
           <div class="board_table">
+            <div class="search_filter_wrap" style="">
+              <!-- 검색어 입력 -->
+              <input type="text" class="input_search" placeholder="검색어를 입력해 주세요.">
+            
+              <!-- 발행 기간 -->
+              <div class="date_range">
+                <div>
+                  <input type="date" class="date_start" >
+                  <span>~</span>
+                  <input type="date" class="date_end">
+                </div>
+              </div>
+            
+              <!-- 기간 버튼 -->
+              <button type="button" class="btn ty_white" style="height: 40px;">1주전</button>
+              <button type="button" class="btn ty_white" style="height: 40px;">1개월전</button>
+              <button type="button" class="btn ty_white" style="height: 40px;">3개월전</button>
+            
+              <!-- 검색 버튼 -->
+              <button type="button" class="btn ty_black" style="height: 40px;">검색</button>
+            
+              <!-- 새로고침 버튼 -->
+              <button type="button" class="btn ty_white" style="height: 40px;">
+                <span style="display: inline-block; width: 18px; height: 18px; background: url('/admin/src/images/ico_refresh.svg') no-repeat center/contain; vertical-align: middle;"></span>
+              </button>
+            </div>            
             <div class="btn_wrap ty_right">
-              <button type="button" class="btn ty_white" data-btn="pop_excel">엑셀 업로드</button>
-              <a href="write_news.html" class="btn ty_ci">글쓰기</a>
+              <a href="write_news.html" class="btn ty_ci">새 포스트 등록</a>
+              <button type="button" class="btn ty_light_gray">삭제</button>
+              <button type="button" class="btn ty_white">공개</button>
+              <button type="button" class="btn ty_white">비공개</button>
+              <button type="button" class="btn ty_white" data-btn="pop_excel">Exdel 다운로드</button>
             </div>
             <form action="">
               <div class="board_wrap">
                 <div class="table_wrap">
                   <div class="t_head">
                     <ul>
-                      <li class="col_chk"><input type="checkbox" class="chk_all"></th>
-                      <li class="col_main">메인</th>
-                      <li class="col_public">분류</th>
-                      <li class="col_title">제목</th>
-                      <li class="col_registration">출처</th>
-                      <li class="col_modify">날짜</th>
-                      <li class="col_summation">요약</th>
-                      <li class="col_hits">수정</th>
+                      <li class="col_chk"><input type="checkbox" class="chk_all"></li>
+                      <li class="col_main">번호</li>
+                      <li class="col_title">제목</li>
+                      <li class="col_public">공개여부</li>
+                      <li class="col_registration">등록일</li>
+                      <li class="col_occurrence">발생일시</li>
+                      <li class="col_modify">수정일</li>
+                      <li class="col_hits">조회수</li>
+                      <li class="col_writer">작성자</li>
                     </ul>
                   </div>
                   <div class="t_body">
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
-                      <li class="col_public">기후테크</li>
-                      <li class="col_title paid"><a href="">클린테크 스타트업 Graphyte, 탄소 제거 솔루션 확장을 위해 3,000만 달러 모금 클린테크</a>
-                      </li>
-                      <li class="col_registration">ESG TODAY</li>
+                      <li class="col_title"><a href="">클린테크 스타트업 Graphyte, 탄소 제거 솔루션 확장을 위해 3,000만 달러 모금 클린테크</a>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_summation"><button type="button" class="summary_btn"></button></li>
-                      <li class="col_hits"><a href="edit_news.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_hits">35</li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
-                      <li class="col_public">제도 &middot; 정책</li>
-                      <li class="col_title paid"><a href="">EU, 중국산 바이오 디젤에 관세부과 예정</a></li>
-                      <li class="col_registration">ESG TODAY</li>
+                      <li class="col_title"><a href="">EU, 중국산 바이오 디젤에 관세부과 예정</a></li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_summation">
-                      </li>
-                      <li class="col_hits"><a href="edit_news.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_hits">35</li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                     <ul>
                       <li class="col_chk"><input type="checkbox"></li>
                       <li class="col_main">1</li>
-                      <li class="col_public">디지털(솔루션)</li>
                       <li class="col_title"><a href="">GRI와 TNFD, 두 가지 표준을 모두 사용해 기업 보고를 돕기 위한 가이드 출시</a></li>
-                      <li class="col_registration">ESG TODAY</li>
+                      <li class="col_public">공개</li>
+                      <li class="col_registration">2024. 02. 26</li>
+                      <li class="col_occurrence">2025.01.20 00:00​</li>
                       <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_summation"><button type="button" class="summary_btn"></button></li>
-                      <li class="col_hits"><a href="edit_news.html"><img src="/admin/src/images/ico_edit.svg"
-                            alt=""></a></li>
+                      <li class="col_hits">35</li>
+                      <li class="col_writer">super admin</li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="btn_wrap ty_both">
-                <button type="button" class="btn ty_black">삭제</button>
-                <input type="submit" class="btn ty_gray" value="변경 저장">
               </div>
             </form>
             <div class="board_pagin f_center">

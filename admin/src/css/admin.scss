@@ -128,10 +128,11 @@ $hd : 80rem;
 .max_1000{ max-width: 1000px;}
 
 // BTN
-.btn{ @include font-size(14rem); width: 112rem; display: inline-block; text-align: center; padding: 13rem; border-radius: 4rem; cursor: pointer; color: $color-white; 
-  &.ty_white{ background-color: $color-white; color: $color-black;; border: 1px solid $black4;}
+.btn{ @include font-size(14rem); display: inline-block; text-align: center; padding: 13rem 26rem; border-radius: 4rem; cursor: pointer; color: $color-white;  border: 1px solid $black4;
+  &.ty_white{ background-color: $color-white; color: $color-black;}
   &.ty_ci{ background-color: $color-ci;}
   &.ty_gray{ background-color: #717171;}
+  &.ty_light_gray{ background-color: #D9D9D9; color: $color-black;}
   &.ty_black{ background-color: $black;}
 }
 .btn_wrap{ display: flex; gap: 8rem;
@@ -143,9 +144,17 @@ $hd : 80rem;
   &.ty_down{ background-image: url(/admin/src/images/ico_download.svg);}
   &.ty_edit{ background-image: url(/admin/src/images/ico_edit.svg);}
 }
-.main_view_btn{ width: 20rem; height: 20rem; background: url(/admin/src/images/ico_eye.svg)no-repeat center center / contain; opacity: .2; width: 20rem; transition: .3s ease;
-  &.on{ opacity: 1;}
+
+// SEARCH FILTER
+.search_filter_wrap {display: flex; gap: 12; align-items: center; margin-bottom: 24rem;
+  .input_search { width: 220rem; height: 40rem; padding: 0 12px; border: 1px solid #ddd; border-radius: 4rem; }
+  .date_range { display: flex; align-items: center; gap: 6rem;
+    input { width: 120rem; height: 40rem; padding: 0 12rem; border: 1px solid #ddd; border-radius: 4rem; }
+    span { @include font-size(14rem); color: #666; }
+    .date_picker_btn { width: 32rem; height: 32rem; background: url(/admin/src/images/ico_calendar.svg)no-repeat center center / contain; cursor: pointer;}
+  }
 }
+
 
 // INPUT
 input{
@@ -192,13 +201,13 @@ input{
   .table_wrap{ width: 100%; text-align: left;  border-top: 2px solid $black;
     input,button{ display: block;}
     ul{ display: flex; min-height: 60rem;
-      li{ display: flex; align-items: center; width: 200rem; flex-shrink: 0;  border-bottom: 1px solid #ccc;}
+      li{ display: flex; align-items: center; width: 155rem; flex-shrink: 0;  border-bottom: 1px solid #ccc;}
     }
     .t_body ul:hover{ background-color: #fafafa;}
 
     .col_chk{ width:96rem;padding-left: 24rem;}
-    .col_main{ width:114rem;}
-    .col_cate{ width:180rem;}
+    .col_main{ width:96rem;}
+    .col_public{ width:96rem;}
     .col_title{ width:100%; padding-right: 20rem; flex-shrink: 1;
       a, span{ display: inline-block; max-width: 450rem; @include ellip(1);}
       a:hover{ text-decoration: underline;}
@@ -210,7 +219,7 @@ input{
     .col_summation{ width:120rem;
       .summary_btn{ width: 24rem; height: 24rem; background: url(/admin/src/images/ico_drop.svg)no-repeat center center / contain;}
     }
-    .col_edit{ width:120rem;
+    .col_hits{ width:120rem;
       img{width: 24rem;}
     }
     tr{
@@ -222,7 +231,7 @@ input{
       &:hover{ background-color: #fafafa;}
       ul:not(:last-child){
         li{ 
-          &.col_chk, &.col_cate, &.col_summation, &.col_edit {
+          &.col_chk, &.col_public, &.col_summation, &.col_hits {
           border-bottom: none;}
         } 
       }

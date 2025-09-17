@@ -213,24 +213,27 @@
 
 .btn {
   font-size: clamp(10px, 14rem, 999rem);
-  width: 112rem;
   display: inline-block;
   text-align: center;
-  padding: 13rem;
+  padding: 13rem 26rem;
   border-radius: 4rem;
   cursor: pointer;
   color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 .btn.ty_white {
   background-color: #ffffff;
   color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 .btn.ty_ci {
   background-color: #0065BD;
 }
 .btn.ty_gray {
   background-color: #717171;
+}
+.btn.ty_light_gray {
+  background-color: #D9D9D9;
+  color: #000000;
 }
 .btn.ty_black {
   background-color: #000000;
@@ -264,16 +267,40 @@
   background-image: url(/admin/src/images/ico_edit.svg);
 }
 
-.main_view_btn {
-  width: 20rem;
-  height: 20rem;
-  background: url(/admin/src/images/ico_eye.svg) no-repeat center center/contain;
-  opacity: 0.2;
-  width: 20rem;
-  transition: 0.3s ease;
+.search_filter_wrap {
+  display: flex;
+  gap: 12;
+  align-items: center;
+  margin-bottom: 24rem;
 }
-.main_view_btn.on {
-  opacity: 1;
+.search_filter_wrap .input_search {
+  width: 220rem;
+  height: 40rem;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 4rem;
+}
+.search_filter_wrap .date_range {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.search_filter_wrap .date_range input {
+  width: 120rem;
+  height: 40rem;
+  padding: 0 12rem;
+  border: 1px solid #ddd;
+  border-radius: 4rem;
+}
+.search_filter_wrap .date_range span {
+  font-size: clamp(10px, 14rem, 999rem);
+  color: #666;
+}
+.search_filter_wrap .date_range .date_picker_btn {
+  width: 32rem;
+  height: 32rem;
+  background: url(/admin/src/images/ico_calendar.svg) no-repeat center center/contain;
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -367,7 +394,7 @@ input[type=text]:read-only {
 .board_table .table_wrap ul li {
   display: flex;
   align-items: center;
-  width: 200rem;
+  width: 155rem;
   flex-shrink: 0;
   border-bottom: 1px solid #ccc;
 }
@@ -379,10 +406,10 @@ input[type=text]:read-only {
   padding-left: 24rem;
 }
 .board_table .table_wrap .col_main {
-  width: 114rem;
+  width: 96rem;
 }
-.board_table .table_wrap .col_cate {
-  width: 180rem;
+.board_table .table_wrap .col_public {
+  width: 96rem;
 }
 .board_table .table_wrap .col_title {
   width: 100%;
@@ -428,10 +455,10 @@ input[type=text]:read-only {
   height: 24rem;
   background: url(/admin/src/images/ico_drop.svg) no-repeat center center/contain;
 }
-.board_table .table_wrap .col_edit {
+.board_table .table_wrap .col_hits {
   width: 120rem;
 }
-.board_table .table_wrap .col_edit img {
+.board_table .table_wrap .col_hits img {
   width: 24rem;
 }
 .board_table .table_wrap tr td {
@@ -440,7 +467,7 @@ input[type=text]:read-only {
 .board_table .table_wrap .group_indicator:hover {
   background-color: #fafafa;
 }
-.board_table .table_wrap .group_indicator ul:not(:last-child) li.col_chk, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_cate, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_summation, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_edit {
+.board_table .table_wrap .group_indicator ul:not(:last-child) li.col_chk, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_public, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_summation, .board_table .table_wrap .group_indicator ul:not(:last-child) li.col_hits {
   border-bottom: none;
 }
 
