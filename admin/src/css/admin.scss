@@ -87,7 +87,7 @@ $hd : 80rem;
           }
           .dep2{ display: block;}
         }
-        .dep1{ display: flex; align-items: center; gap: 12rem; padding: 12rem; border-radius: 4rem;
+        .dep1{ display: flex; align-items: center; gap: 12rem; padding: 12rem; border-radius: 4rem;  cursor: pointer;
           img{ width: 24rem; filter: brightness(0);}
         }
         .dep2{ display: none; padding: 12rem 0rem 16rem 49rem; border-bottom: 1px solid #e1e1e1;
@@ -317,6 +317,7 @@ input{
   .tit{ margin-bottom: 12rem;
     &.imp::after{ content: ' *'; color: #ff0000;}
   }
+  .col2{ display: flex; gap: 32rem;}
   .write_slot{ width: 100%; border-radius: 4rem; border: 1px solid #d9d9d9; padding: 0 20rem; font-weight: 400; position: relative; font-weight: 500;
     &:not(textarea){ height: 50rem; }
     &.file_upload{ display: block;  background: url(/admin/src/images/ico_upload.svg)no-repeat right 24rem center / 16rem auto;
