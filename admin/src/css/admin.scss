@@ -274,6 +274,17 @@ input{
     &.banner_table {
       .col_title { width: 50%;}
     }
+    &.html_page_table {
+      .col_path { width: 23.14%; padding-left: 20rem;}
+      .col_title { width: 27.25%;}
+      .col_type, .col_delete { width: 7%;}
+      .col_open, .col_modify, .col_reservation { width:11.57%;}
+      .t_body {
+        .col_delete {
+          .btn {padding: 15rem; border: 1px solid #000; border-radius: 4rem; color: #000;}
+        }
+      }
+    }
   }
 }
 
