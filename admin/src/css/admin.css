@@ -443,6 +443,16 @@ input[type=text]:read-only {
   margin: 18rem 0;
 }
 
+.board_table .table_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.board_table .table_top .title {
+  font-size: clamp(10px, 14rem, 999rem);
+  font-weight: 500;
+}
 .board_table .table_wrap {
   width: 100%;
   text-align: left;

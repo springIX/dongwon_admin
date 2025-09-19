@@ -223,6 +223,9 @@ input{
 .board_wrap{ margin: 18rem 0;}
 
 .board_table{
+  .table_top {display: flex; flex-direction: row; justify-content: space-between; align-items:end;
+  .title {@include font-size(14rem); font-weight: 500;}
+  }
   .table_wrap{ width: 100%; text-align: left;  border-top: 2px solid $black;
     input,button{ display: block;}
     ul{ display: flex; min-height: 60rem;
