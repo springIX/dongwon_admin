@@ -239,6 +239,7 @@ input{
     .col_registration, .col_occurrence, .col_modify, .col_writer, .col_start, .col_end { width:11.57%;}
     .col_hits { width:7%;}
     .col_file { width:12.98%;}
+    .col_company { width:53.28%;}
     .col_title{ width:26.41%; max-width: 100%; padding-right: 20rem;
       a, span{ display: inline-block; max-width: 450rem; @include ellip(1);}
       a:hover{ text-decoration: underline;}
