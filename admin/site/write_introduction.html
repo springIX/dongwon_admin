@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">계열사 관리</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_media.svg" alt="">
+                미디어룸 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/media/contents.html">콘텐츠룸</a></li>
+                <li><a href="/admin/media/news.html">뉴스룸</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_board.svg" alt="">
+                게시판 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/board/introduction.html">그룹소개 자료실</a></li>
+                <li><a href="/admin/board/sustainability.html">지속가능경영 보고서</a></li>
+                <li><a href="/admin/board/investment.html">투자정보</a></li>
+                <li class="close"><a href="/admin/board/disclosure.html">공시정보</a></li>
+                <li class="close"><a href="/admin/board/announcement.html">공고</a></li>
+                <li class="close"><a href="/admin/board/management.html">경영자료</a></li>
+                <li class="close"><a href="/admin/board/governance.html">지배구조보고서</a></li>
+                <li class="close"><a href="/admin/board/ir.html">IR자료실</a></li>
+                <li><a href="/admin/board/notice.html">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/admin/banner/index.html" class="dep1">
+                <img src="/admin/src/images/ico_banner.svg" alt="">
+                배너 관리
+              </a>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_site.svg" alt="">
+                사이트 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/site/affiliate.html">계열사 관리</a></li>
+                <li><a href="/admin/site/html_page.html">HTML 페이지 관리</a></li>
+                <li><a href="/admin/site/hashtag.html">해시태그 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_operate.svg" alt="">
+                운영 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/operate/admin.html">관리자 계정</a></li>
+                <li><a href="/admin/operate/ip.html">접속 IP</a></li>
+                <li><a href="/admin/operate/arrangement.html">배치 작업</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <div id="contents">
+        <!-- 오피니언 -->
+        <div class="con_wrap max_1000">
+          <div class="write_inner">
+            <form action="">
+              <p class="write_tit">계열사 등록</p>
+
+              <div class="write_wrap">
+                <div class="write_box">
+                  <p class="tit imp">Code( url )</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">계열사명</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">내용</p>
+                  <textarea class="write_slot" required></textarea>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Section( head )</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Section( bodyClass ) </p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Section( last )</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box ty_half ty_indent">
+                  <p class="tit">이미지 관리</p>
+                  <label class="file_upload">
+                    <span class="write_slot file_name"></span>
+                    <input type="file" hidden required></input>
+                    <div class="write_slot file_btn">파일 추가</div>
+                  </label>
+                  <div class="thumb_box"></div>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Page Title( seo )</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Page Description( seo )</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Page Image( seo )</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">공개 여부</p>
+                  <div class="list_check">
+                    <label>
+                      <input type="radio" name="comment" checked>
+                      <span>공개</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="comment">
+                      <span>비공개</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="btn_wrap">
+                <a href="" class="btn back_btn ty_gray">취소</a>
+                <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+  <script>
+    $('#lnb nav > ul > li').eq(3).addClass('on');
+    $('#lnb nav > ul > li').eq(3).find('.dep2 li').eq(0).addClass('on');
+  </script>
+</body>
+
+</html>
