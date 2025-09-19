@@ -483,10 +483,10 @@ input[type=text]:read-only {
 .board_table .table_wrap .col_main {
   width: 9%;
 }
-.board_table .table_wrap .col_public {
+.board_table .table_wrap .col_public, .board_table .table_wrap .col_target {
   width: 6.68%;
 }
-.board_table .table_wrap .col_registration, .board_table .table_wrap .col_occurrence, .board_table .table_wrap .col_modify, .board_table .table_wrap .col_writer {
+.board_table .table_wrap .col_registration, .board_table .table_wrap .col_occurrence, .board_table .table_wrap .col_modify, .board_table .table_wrap .col_writer, .board_table .table_wrap .col_start, .board_table .table_wrap .col_end {
   width: 11.57%;
 }
 .board_table .table_wrap .col_hits {
@@ -495,8 +495,12 @@ input[type=text]:read-only {
 .board_table .table_wrap .col_file {
   width: 12.98%;
 }
+.board_table .table_wrap .col_company {
+  width: 53.28%;
+}
 .board_table .table_wrap .col_title {
   width: 26.41%;
+  max-width: 100%;
   padding-right: 20rem;
 }
 .board_table .table_wrap .col_title a, .board_table .table_wrap .col_title span {
@@ -555,6 +559,9 @@ input[type=text]:read-only {
 }
 .board_table .table_wrap.introduction_table .col_title {
   width: 20.44%;
+}
+.board_table .table_wrap.banner_table .col_title {
+  width: 50%;
 }
 
 .board_gallery .board_wrap {
