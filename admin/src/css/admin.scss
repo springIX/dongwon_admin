@@ -235,11 +235,11 @@ input{
 
     .col_chk{ width:4.63%;padding-left: 24rem; box-sizing: border-box;}
     .col_main{ width:9%;}
-    .col_public{ width:6.68%;}
-    .col_registration, .col_occurrence, .col_modify, .col_writer { width:11.57%;}
+    .col_public, .col_target{ width:6.68%;}
+    .col_registration, .col_occurrence, .col_modify, .col_writer, .col_start, .col_end { width:11.57%;}
     .col_hits { width:7%;}
     .col_file { width:12.98%;}
-    .col_title{ width:26.41%; padding-right: 20rem;
+    .col_title{ width:26.41%; max-width: 100%; padding-right: 20rem;
       a, span{ display: inline-block; max-width: 450rem; @include ellip(1);}
       a:hover{ text-decoration: underline;}
       &.paid a{ padding:1px 0 1px 22rem; background: url(/admin/src/images/ico_paid.svg)no-repeat left top / auto 100%;}
@@ -269,6 +269,9 @@ input{
     }
     &.introduction_table {
       .col_title { width: 20.44%;}
+    }
+    &.banner_table {
+      .col_title { width: 50%;}
     }
   }
 }
