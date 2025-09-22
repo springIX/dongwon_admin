@@ -126,7 +126,7 @@
                   <p class="tit imp">카테고리</p>
                   <div class="list_check">
                     <label>
-                      <input type="radio" name="cate" checked>
+                      <input type="radio" name="cate">
                       <span>공시정보</span>
                     </label>
                     <label>
@@ -134,7 +134,7 @@
                       <span>공고</span>
                     </label>
                     <label>
-                      <input type="radio" name="cate">
+                      <input type="radio" name="cate" checked>
                       <span>경영자료</span>
                     </label>
                     <label>
@@ -155,17 +155,10 @@
                   <p class="dsc">필수 입력값입니다.</p>
                 </div>
 
-                <div class="write_box caution not_announcement_cont">
-                  <p class="tit imp">URL</p>
-                  <input type="text" maxlength="100" class="write_slot" placeholder="http://" required>
-                  <p class="dsc gray">최대 50자까지 입력 가능 (0/50)</p>
-                  <p class="dsc">URL을 입력해 주세요.</p>
-                </div>
-
-                <div class="write_box ty_half ty_indent announcement_cont caution">
-                  <p class="tit">첨부파일</p>
+                <div class="write_box ty_half ty_indent caution">
+                  <p class="tit imp">첨부파일</p>
                   <label class="file_upload">
-                    <span class="write_slot file_name"></span>
+                    <span class="write_slot file_name">file name.pdf</span>
                     <input type="file" hidden required></input>
                     <div class="write_slot file_btn">파일 추가</div>
                   </label>
@@ -174,11 +167,10 @@
                   <div class="thumb_box"></div>
                 </div>
 
-                <div class="write_box announcement_cont">
+                <div class="write_box">
                   <p class="tit">내용</p>
                   <div class="editor_area"></div>
                 </div>
-
 
                 <div class="write_box ty_half">
                   <p class="tit imp">발행 일자</p>
@@ -218,21 +210,6 @@
     $(function () {
       $('#lnb nav > ul > li').eq(1).addClass('on');
       $('#lnb nav > ul > li').eq(1).find('.dep2 li').eq(2).addClass('on');
-
-      $('input[name="comment"]').on('change', function () {
-        if ($(this).next('span').text() === '공고' && $(this).is(':checked')) {
-          // 공고 선택됨
-          $('.announcement_cont').show();
-          $('.not_announcement_cont').hide();
-        } else {
-          // 공고 아닌 것 선택됨
-          $('.announcement_cont').hide();
-          $('.not_announcement_cont').show();
-        }
-      });
-
-      // 페이지 로드시 초기 상태도 체크
-      $('input[name="comment"]:checked').trigger('change');
     });
   </script>
 </body>

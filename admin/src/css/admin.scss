@@ -368,17 +368,35 @@ input{
   .dsc{ margin-top: 12rem; @include font-size(12rem); color: #666; font-weight: 400;
     &.gray{ color: #666 !important;}
     + .dsc{ margin-top: 6rem;}
+    a,button{ display: inline; text-decoration: underline; color: #266BFF;}
   }
   &.ty_half{ width: calc(50% - 12rem);
     &.ty_indent{ margin-right: 200rem;}
   }
+  &.ty_half_block{ padding-right: calc(50% + 12rem);}
   &.caution{
     .write_slot{ border-color: #ff0000;}
     .dsc{ color: #ff0000;}
   }
-  textarea{padding: 24rem !important;}
+  textarea{padding: 24rem !important; height: 260rem;}
   .thumb_box{display: none; width: 291rem; height: 239rem; background-color: #eee; margin-top: 12rem;}
 }
+
+.write_box_ty2{ display: flex; border: 1px solid #d9d9d9; border-radius: 4rem; width: 100%;
+  + .write_box_ty2{ margin-top: 32rem;
+    li{ width: 20%;
+      .tit{ width: auto;}
+      input{ padding:0;}
+    }
+  }
+  .bd_right{  border-right: 1px solid #d9d9d9; }
+  input{ width: 100%;}
+  li{ width: 100%; display: flex; height: 60rem; line-height: 60rem;
+    > *{ padding: 0 24rem;}
+    .tit{ flex-shrink: 0; font-weight: 700;width: 140rem;}
+  }
+}
+
 select{ background: url(/admin/src/images/ico_arr.svg)no-repeat right 24rem top 50% / 8rem auto;}
 textarea{ height: 160rem;}
 .write_sub_tit{ display: block; margin: 30rem 0 -12rem;}
@@ -407,11 +425,12 @@ textarea{ height: 160rem;}
   &.size_s{ width: 425rem;}
   &.size_m{ width: 490rem;}
   &.size_l{ width: 540rem;}
+  &.size_xl{ width: 1080rem;}
 
   .popup_tit{ display: block; @include font-size(18rem); margin-bottom: 35rem;}
   .btn_wrap{ margin-top: 40rem;}
-  .info{ @include font-size(18rem); line-height: 1.6;}
-  .info2{ @include font-size(12rem); color: #aeaeae; line-height: 1.5;}
+  .info{ @include font-size(18rem); line-height: 1.6;  max-height: calc(100vh - 300rem); overflow-y: auto;}
+  .info2{ @include font-size(12rem); color: #aeaeae; line-height: 1.5;  max-height: calc(100vh - 300rem); overflow-y: auto;}
 
   &.pop_pw_find{
     .info{ margin: 33rem 0 10rem; line-height: 1.5;
@@ -457,6 +476,20 @@ textarea{ height: 160rem;}
             }
             .close_btn{ width: 8rem; height: 8rem; background: url(/admin/src/images/ico_close.svg)no-repeat center center / contain; position: absolute; right: 0; top: 7rem;}
           }
+        }
+      }
+    }
+  }
+
+  &.pop_cron{
+    strong{ display: block;}
+    .mb_24{ margin-bottom: 24rem;}
+    .close_btn{  width: 14rem; height: 14rem; position: absolute; right: 21rem; top: 21rem; background: url(../images/ico_close.svg)no-repeat center center / contain;}
+    .code_box{ display: flex; gap: 40rem; margin: 24rem 0;
+      strong{ margin-bottom: 8rem;}
+      ul{ 
+        li{ width: max-content; padding: 2rem 8rem; color: #C7254E; background-color: #F9F2F4; border-radius: 4rem;
+          + li{ margin-top: 8rem;}
         }
       }
     }

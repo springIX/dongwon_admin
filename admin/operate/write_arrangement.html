@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동원 | Administrator</title>
+
+  <!-- META -->
+  <meta name="title" content="" />
+  <meta name="subject" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="">
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- //META -->
+  <link rel="stylesheet" href="/admin/src/css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- HEADER HEADER HEADER HEADER -->
+    <header id="header">
+      <div class="logo_box">
+        <a href="/admin/" class="logo">
+          <img src="/admin/src/images/logo.svg" alt="">
+        </a>
+        <button class="all_menu_btn"></button>
+      </div>
+      <h2 class="title">배치 작업</h2>
+      <div class="account_info">
+        <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
+        <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
+      </div>
+    </header>
+    <!-- //HEADER HEADER HEADER HEADER -->
+
+    <main id="admin_contents" class="admin_main">
+      <!-- LNB LNB LNB LNB LNB LNB LNB LNB  -->
+      <div id="lnb">
+        <nav>
+          <ul>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_media.svg" alt="">
+                미디어룸 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/media/contents.html">콘텐츠룸</a></li>
+                <li><a href="/admin/media/news.html">뉴스룸</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_board.svg" alt="">
+                게시판 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/board/introduction.html">그룹소개 자료실</a></li>
+                <li><a href="/admin/board/sustainability.html">지속가능경영 보고서</a></li>
+                <li><a href="/admin/board/investment.html">투자정보</a></li>
+                <li class="close"><a href="/admin/board/disclosure.html">공시정보</a></li>
+                <li class="close"><a href="/admin/board/announcement.html">공고</a></li>
+                <li class="close"><a href="/admin/board/management.html">경영자료</a></li>
+                <li class="close"><a href="/admin/board/governance.html">지배구조보고서</a></li>
+                <li class="close"><a href="/admin/board/ir.html">IR자료실</a></li>
+                <li><a href="/admin/board/notice.html">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/admin/banner/index.html" class="dep1">
+                <img src="/admin/src/images/ico_banner.svg" alt="">
+                배너 관리
+              </a>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_site.svg" alt="">
+                사이트 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/site/affiliate.html">계열사 관리</a></li>
+                <li><a href="/admin/site/html_page.html">HTML 페이지 관리</a></li>
+                <li><a href="/admin/site/hashtag.html">해시태그 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="dep1">
+                <img src="/admin/src/images/ico_operate.svg" alt="">
+                운영 관리
+              </div>
+              <ul class="dep2">
+                <li><a href="/admin/operate/admin.html">관리자 계정</a></li>
+                <li><a href="/admin/operate/ip.html">접속 IP</a></li>
+                <li><a href="/admin/operate/arrangement.html">배치 작업</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- //LNB LNB LNB LNB LNB LNB LNB LNB  -->
+
+      <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
+      <div id="contents">
+        <!-- 오피니언 -->
+        <div class="con_wrap max_1000">
+          <div class="write_inner">
+            <form action="">
+              <p class="write_tit">신규 등록</p>
+
+              <div class="write_wrap">
+                <div class="write_box ty_half_block caution">
+                  <p class="tit imp">Bean Name</p>
+                  <select class="write_slot">
+                    <option value="">applicantinformationDestroyJob</option>
+                    <option value="">commentDestroyJob</option>
+                    <option value="">ethicsinformationDestroyJob</option>
+                    <option value="">pingJob</option>
+                  </select>
+                  <p class="dsc">필수 입력값입니다.</p>
+                </div>
+
+                <div class="write_box ty_half_block caution">
+                  <p class="tit imp">배치 이름</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc">필수 입력값입니다.</p>
+                </div>
+
+                <div class="write_box ty_half caution">
+                  <p class="tit">시간 설정</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc gray">*cron 형식. 각 항목은 공백으로 구분 "분 시간 일시 월 주간" 형식. 자세한 형식은 <button data-btn="cron"
+                      type="button">이곳을</button> 참조</p>
+                  <p class="dsc">유효하지 않은 Cron 형식입니다. 올바른 형식으로 입력해 주세요.</p>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">설명</p>
+                  <textarea name="" id="" class="write_slot"></textarea>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">파라미터</p>
+                  <textarea name="" id="" class="write_slot"></textarea>
+                  <p class="dsc">*key=value 형식. 각 항목은 쉼표로 구분</p>
+                </div>
+              </div>
+              <div class="btn_wrap ty_both">
+                <div>
+                  <a href="" class="btn back_btn ty_gray">취소</a>
+                  <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
+                </div>
+                <div>
+                  <button class="btn ty_black">삭제</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+
+      <!-- POPUP POPUP POPUP POPUP -->
+      <!-- POPUP : 비밀번호 변경 팝업 -->
+      <div class="popup pop_save size_s" data-btn="cron">
+
+        <div class="btn_wrap ty_full">
+          <a href="/admin/login/" class="btn ty_white">취소</a>
+          <a href="/admin/login/" class="btn ty_black">확인</a>
+        </div>
+      </div>
+
+      <!-- POPUP : 작성페이지에서 작성 중 이탈할 때 -->
+      <div class="popup pop_cron size_xl" data-toggle="cron">
+        <button class="close_btn" data-btn="cron"></button>
+        <div class="info">
+          <strong class="mb_24">Cron Format</strong>
+          Provides a parser and evaluator for unix-like cron expressions. Cron expressions provide the ability to
+          specify complex time combinations such as "At 8:00am every Monday through Friday" or "At 1:30am every last
+          Friday of the month".<br><br>
+          Cron expressions are comprised of 5 required fields and one optional field separated by white space. The
+          fields respectively are described as follows:
+
+          <ul class="code_box">
+            <li>
+              <strong>Field Name</strong>
+              <ul>
+                <li>Minutes</li>
+                <li>Hours</li>
+                <li>Day-of-month</li>
+                <li>Month</li>
+                <li>Day-of-Week</li>
+                <li>Year (Optional)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Allowed Values</strong>
+              <ul>
+                <li>0-59</li>
+                <li>0-23</li>
+                <li>1-31</li>
+                <li>1-12 or JAN-DEC</li>
+                <li>1-7 or SUN-SAT</li>
+                <li>empty, 1970-2199</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Allowed Special Characters</strong>
+              <ul>
+                <li>, - * /</li>
+                <li>, - * /</li>
+                <li>, - * ? / L W</li>
+                <li>, - * /</li>
+                <li>, - * ? / L #</li>
+                <li>, - * /</li>
+              </ul>
+            </li>
+          </ul>
+
+          The '*' character is used to specify all values. For example, "*" in the minute field means "every minute".
+          The '?' character is allowed for the day-of-month and day-of-week fields. It is used to specify 'no specific
+          value'. This is useful when you need to specify something in one of the two fields, but not the other.<br>
+          The '-' character is used to specify ranges For example "10-12" in the hour field means "the hours 10, 11 and
+          12".
+          The ',' character is used to specify additional values. For example "MON,WED,FRI" in the day-of-week field
+          means "the days Monday, Wednesday, and Friday". <br>
+          The '/' character is used to specify increments. For example "0/15" in the seconds field means "the seconds 0,
+          15, 30, and 45". And "5/15" in the seconds field means "the seconds 5, 20, 35, and 50". Specifying '*' before
+          the '/' is equivalent to specifying 0 is the value to start with. Essentially, for each field in the
+          expression, there is a set of numbers that can be turned on or off. For seconds and minutes, the numbers range
+          from 0 to 59. For hours 0 to 23, for days of the month 0 to 31, and for months 1 to 12. The "/" character
+          simply helps you turn on every "nth" value in the given set. Thus "7/6" in the month field only turns on month
+          "7", it does NOT mean every 6th month, please note that subtlety. <br>
+          The 'L' character is allowed for the day-of-month and day-of-week fields. This character is short-hand for
+          "last", but it has different meaning in each of the two fields. For example, the value "L" in the day-of-month
+          field means "the last day of the month" - day 31 for January, day 28 for February on non-leap years. If used
+          in the day-of-week field by itself, it simply means "7" or "SAT". But if used in the day-of-week field after
+          another value, it means "the last xxx day of the month" - for example "6L" means "the last friday of the
+          month". You can also specify an offset from the last day of the month, such as "L-3" which would mean the
+          third-to-last day of the calendar month. When using the 'L' option, it is important not to specify lists, or
+          ranges of values, as you'll get confusing/unexpected results. <br>
+          The 'W' character is allowed for the day-of-month field. This character is used to specify the weekday
+          (Monday-Friday) nearest the given day. As an example, if you were to specify "15W" as the value for the
+          day-of-month field, the meaning is: "the nearest weekday to the 15th of the month". So if the 15th is a
+          Saturday, the trigger will fire on Friday the 14th. If the 15th is a Sunday, the trigger will fire on Monday
+          the 16th. If the 15th is a Tuesday, then it will fire on Tuesday the 15th. However if you specify "1W" as the
+          value for day-of-month, and the 1st is a Saturday, the trigger will fire on Monday the 3rd, as it will not
+          'jump' over the boundary of a month's days. The 'W' character can only be specified when the day-of-month is a
+          single day, not a range or list of days. <br>
+          The 'L' and 'W' characters can also be combined for the day-of-month expression to yield 'LW', which
+          translates to "last weekday of the month". <br>
+          The '#' character is allowed for the day-of-week field. This character is used to specify "the nth" XXX day of
+          the month. For example, the value of "6#3" in the day-of-week field means the third Friday of the month (day 6
+          = Friday and "#3" = the 3rd one in the month). Other examples: "2#1" = the first Monday of the month and "4#5"
+          = the fifth Wednesday of the month. Note that if you specify "#5" and there is not 5 of the given day-of-week
+          in the month, then no firing will occur that month. If the '#' character is used, there can only be one
+          expression in the day-of-week field ("3#1,6#3" is not valid, since there are two expressions). <br>
+          The legal characters and the names of months and days of the week are not case sensitive.<br><br>
+
+          <strong>NOTES:</strong>
+          <ul>
+            <li>Support for specifying both a day-of-week and a day-of-month value is not complete (you'll need to use
+              the '?' character in one of these fields).</li>
+            <li>Overflowing ranges is supported - that is, having a larger number on the left hand side than the right.
+              You might do 22-2 to catch 10 o'clock at night until 2 o'clock in the morning, or you might have NOV-FEB.
+              It is very important to note that overuse of overflowing ranges creates ranges that don't make sense and
+              no effort has been made to determine which interpretation CronExpression chooses. An example would be "0
+              14-6 ? * FRI-MON".</li>
+          </ul>
+        </div>
+        <div class="btn_wrap ty_right">
+          <button class="btn ty_black" data-btn="cron">확인</button>
+        </div>
+      </div>
+
+      <!-- //POPUP POPUP POPUP POPUP -->
+
+    </main>
+  </div>
+
+  <script src="/admin/src/js/jquery.js"></script>
+  <script src="/admin/src/js/admin.js"></script>
+  <script>
+    $('#lnb nav > ul > li').eq(4).addClass('on');
+    $('#lnb nav > ul > li').eq(4).find('.dep2 li').eq(2).addClass('on');
+  </script>
+</body>
+
+</html>
