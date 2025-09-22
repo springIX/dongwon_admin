@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">운영 관리</h2>
+      <h2 class="title">배치 작업</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -116,58 +116,38 @@
       <div id="contents">
         <!-- 콘텐츠룸 -->
         <div class="con_wrap">
-          <div class="dep2_tab">
-            <a href="admin.html">관리자 계정</a>
-            <a href="ip.html">접속 IP</a>
-            <a href="arrangement.html" class="on">배치 작업</a>
-          </div>
           <div class="board_table">
-            <div class="btn_wrap ty_right">
-              <a href="write_arrangement.html" class="btn ty_ci">신규 등록</a>
-            </div>
+            <div class="sub_tit">배치 실행 이력</div>
             
             <form action="">
               <div class="board_wrap">
                 <div class="table_wrap arrangement_table">
                   <div class="t_head">
                     <ul>
-                      <li class="col_name">이름</li>
-                      <li class="col_title">설명</li>
-                      <li class="col_date">최종 실행 일시</li>
-                      <li class="col_start">Issuer</li>
-                      <li class="col_end">실행이력</li>
-                      <li class="col_work">수동실행</li>
+                      <li class="col_work">배치 작업</li>
+                      <li class="col_start">시작 시간</li>
+                      <li class="col_end">완료 시간 </li>
+                      <li class="col_processing">처리 건수</li>
+                      <li class="col_issuer">Issuer</li>
+                      <li class="col_log">로그 보기</li>
                     </ul>
                   </div>
                   <div class="t_body">
                     <ul>
-                      <li class="col_name"><a href="edit_arrangement.html">(정도경영) 개인정보 파기</a></li>
-                      <li class="col_title">정도경영을 통해 작성한 개인정보(이름, 휴대폰번호, 이메일)는 2년 후에 파기된다.</li>
-                      <li class="col_date">2025.09.02 00:30</li>
-                      <li class="col_start">Issuer</li>
-                      <li class="col_end"><a href="arrangement_history.html" class="btn">보기</a></li>
-                      <li class="col_work"><button type="button" class="btn">실행</button></li>
-                    </ul>
-                    <ul>
-                      <li class="col_name"><a href="edit_arrangement.html">(홍보대사) 개인정보 파기</a></li>
-                      <li class="col_title">홍보대사 신청시 작성한 개인정보(SNS고유ID, 이름, 휴대폰번호, 이메일)는 2년 후에 파기된다.</li>
-                      <li class="col_date">2025.09.02 00:30</li>
-                      <li class="col_start">Issuer</li>
-                      <li class="col_end"><a href="arrangement_history.html" class="btn">보기</a></li>
-                      <li class="col_work"><button type="button" class="btn">실행</button></li>
-                    </ul>
-                    <ul>
-                      <li class="col_name"><a href="edit_arrangement.html">(댓글) 개인정보 파기</a></li>
-                      <li class="col_title">게시물 댓글 작성시 사용한 개인정보(SNS고유ID, 이름, 휴대폰번호, 이메일)는 2년 후에 파기된다.</li>
-                      <li class="col_date">2025.09.02 00:30</li>
-                      <li class="col_start">Issuer</li>
-                      <li class="col_end"><a href="arrangement_history.html" class="btn">보기</a></li>
-                      <li class="col_work"><button type="button" class="btn">실행</button></li>
+                      <li class="col_work"><a href="">(정도경영) 개인정보 파기</a></li>
+                      <li class="col_start">2025.09.02 00:30:39</li>
+                      <li class="col_end">완료 시간 </li>
+                      <li class="col_processing">0</li>
+                      <li class="col_issuer">scheduler</li>
+                      <li class="col_log"><a href="" class="btn">보기</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </form>
+            <div class="btn_wrap ty_left">
+              <a href="arrangement.html" class="btn ty_gray">배치 목록</a>
+            </div>
             <div class="board_pagin f_center">
               <a href="" class="pagin_btn prv_end disabled"></a>
               <a href="" class="pagin_btn prv disabled"></a>
