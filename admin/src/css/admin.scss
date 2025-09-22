@@ -285,6 +285,10 @@ input{
         }
       }
     }
+    &.hashtag_table {
+      .col_category { width: 20%; padding-left: 20rem;}
+      .col_hashtag { width: 80%;}
+    }
   }
 }
 
