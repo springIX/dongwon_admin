@@ -567,6 +567,32 @@ input[type=text]:read-only {
 .board_table .table_wrap.banner_table .col_title {
   width: 50%;
 }
+.board_table .table_wrap.html_page_table .col_path {
+  width: 23.14%;
+  padding-left: 20rem;
+}
+.board_table .table_wrap.html_page_table .col_title {
+  width: 27.25%;
+}
+.board_table .table_wrap.html_page_table .col_type, .board_table .table_wrap.html_page_table .col_delete {
+  width: 7%;
+}
+.board_table .table_wrap.html_page_table .col_open, .board_table .table_wrap.html_page_table .col_modify, .board_table .table_wrap.html_page_table .col_reservation {
+  width: 11.57%;
+}
+.board_table .table_wrap.html_page_table .t_body .col_delete .btn {
+  padding: 15rem;
+  border: 1px solid #000;
+  border-radius: 4rem;
+  color: #000;
+}
+.board_table .table_wrap.hashtag_table .col_category {
+  width: 20%;
+  padding-left: 20rem;
+}
+.board_table .table_wrap.hashtag_table .col_hashtag {
+  width: 80%;
+}
 
 .board_gallery .board_wrap {
   border-top: 2px solid #000000;

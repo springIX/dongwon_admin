@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">미디어 셀렉션</h2>
+      <h2 class="title">미디어룸 관리</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -114,89 +114,70 @@
 
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
-        <!-- 오피니언 -->
+        <!-- 콘텐츠룸 -->
         <div class="con_wrap">
-          <div class="write_inner">
+
+          <div class="board_table">
             <form action="">
-              <div class="dep2_tab ty_full">
-                <a href="write_talk.html">강연</a>
-                <a href="write_book.html" class="on">책소개</a>
-              </div>
-
-              <div class="write_wrap">
-                <div class="write_box">
-                  <p class="tit imp">제목</p>
-                  <input type="text" maxlength="100" class="write_slot" required>
-                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
+              <div class="board_wrap">
+                <div class="table_wrap hashtag_table">
+                  <div class="t_head">
+                    <ul>
+                      <li class="col_category">카테고리</li>
+                      <li class="col_hashtag">해시태그</li>
+                    </ul>
+                  </div>
+                  <div class="t_body">
+                    <ul>
+                      <li class="col_category"><a href="write_hashtag_notice.html">공지사항</a></li>
+                      <li class="col_hashtag">동원그룹,공지사항,동원팜스,문의,운영정책,테크팩솔루션,궁금증,미디어동원</li>
+                    </ul>
+                    <ul>
+                      <li class="col_category"><a href="write_hashtag_content_room.html">콘텐츠룸</a></li>
+                      <li class="col_hashtag">동원그룹,공지사항,동원팜스,문의,운영정책,테크팩솔루션,궁금증,미디어동원</li>
+                    </ul>
+                    <ul>
+                      <li class="col_category"><a href="write_hashtag_news_room.html">뉴스룸</a></li>
+                      <li class="col_hashtag">동원그룹,공지사항,동원팜스,문의,운영정책,테크팩솔루션,궁금증,미디어동원</li>
+                    </ul>
+                  </div>
                 </div>
-
-                <div class="write_box ty_half">
-                  <p class="tit imp">저자</p>
-                  <input type="text" class="write_slot" required>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit imp">외부 링크</p>
-                  <input type="text" class="write_slot" placeholder="http://" required>
-                </div>
-
-                <div class="write_box ty_half">
-                  <p class="tit imp">출처</p>
-                  <input type="text" class="write_slot" required>
-                </div>
-
-                <div class="write_box ty_half">
-                  <p class="tit imp">발행일</p>
-                  <input type="date" class="write_slot"></input>
-                </div>
-
-                <div class="write_box ty_half ty_indent">
-                  <p class="tit imp">이미지</p>
-                  <label class="write_slot file_upload ty_img">
-                    <span class="file_name"></span>
-                    <input type="file" hidden></input>
-                  </label>
-                  <p class="dsc">* PNG, JPG, GIF 파일(715x470픽셀 이상)만 업로드 가능합니다.</p>
-                </div>
-              </div>
-              <div class="btn_wrap ty_right">
-                <a href="" class="btn back_btn ty_gray">취소</a>
-                <input type="submit" value="저장" class="btn ty_ci" data-btn="pop_save">
               </div>
             </form>
+            <div class="board_pagin f_center">
+              <a href="" class="pagin_btn prv_end disabled"></a>
+              <a href="" class="pagin_btn prv disabled"></a>
+              <span class="pagin_num">1</span>
+              <a href="" class="pagin_num">2</a>
+              <a href="" class="pagin_num">3</a>
+              <a href="" class="pagin_num">4</a>
+              <a href="" class="pagin_num">5</a>
+              <a href="" class="pagin_btn nxt"></a>
+              <a href="" class="pagin_btn nxt_end"></a>
+            </div>
           </div>
         </div>
         <!-- TOAST TOAST TOAST TOAST -->
-        <!-- TOAST : 필수 기입 사항 입력되지 않았을 때 -->
-        <div class="toast_popup" data-toggle="toast_imp">
+        <!-- TOAST : 메인노출 체크갯수 초과시 알림 -->
+        <div class="toast_popup" data-toggle="toast_main_view">
           <div class="txt_box">
             <span class="ico"></span>
-            <p>필수 기입 사항이 입력되지 않았습니다. 다시 확인해 주세요.</p>
+            <p>메인에는 <span>5</span>개의 항목만 표시됩니다.</p>
           </div>
-          <button type="button" class="close_btn" data-btn="toast_imp"></button>
+          <button type="button" class="close_btn" data-btn="toast_main_view"></button>
+        </div>
+
+        <!-- TOAST : 메인에 표시되어야 할 게시글갯수보다 적게 체크했을 때 -->
+        <div class="toast_popup" data-toggle="toast_main_view_select">
+          <div class="txt_box">
+            <span class="ico"></span>
+            <p>메인에 표시할 <span>2</span>개의 항목을 모두 선택해 주세요.</p>
+          </div>
+          <button type="button" class="close_btn" data-btn="toast_main_view_select"></button>
         </div>
         <!-- //TOAST TOAST TOAST TOAST -->
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
-
-      <!-- POPUP POPUP POPUP POPUP -->
-      <!-- POPUP : 저장 완료 -->
-      <div class="popup pop_save size_s" data-toggle="pop_save">
-        <p class="info">성공적으로 저장되었습니다</p>
-        <div class="btn_wrap ty_right">
-          <a href="/admin/login/" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-
-      <!-- POPUP : 작성페이지에서 작성 중 이탈할 때 -->
-      <div class="popup pop_save size_l" data-toggle="pop_cancel">
-        <p class="info">저장되지 않은 내용이 있습니다. <br>현재 작성 중인 내용을 저장하지 않고 목록으로 이동하시겠습니까?</p>
-        <div class="btn_wrap ty_right">
-          <button type="button" class="btn ty_white popup_close">취소</button>
-          <a href="" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-      <!-- //POPUP POPUP POPUP POPUP -->
     </main>
   </div>
 
