@@ -227,17 +227,23 @@ input{
   .table_top {display: flex; flex-direction: row; justify-content: space-between; align-items:end;
   .title {@include font-size(14rem); font-weight: 500;}
   }
+  .sub_tit {@include font-size(24rem); font-weight: 500; padding-bottom: 36rem;}
   .table_wrap{ width: 100%; text-align: left;  border-top: 2px solid $black;
     input,button{ display: block;}
     ul{ display: flex; min-height: 60rem;
       li{ display: flex; align-items: center; flex-shrink: 0;  border-bottom: 1px solid #ccc; box-sizing: border-box;}
     }
     .t_body ul:hover{ background-color: #fafafa;}
-
+    
+    .t_body {
+      li {
+        .btn {padding: 15rem; border: 1px solid #000; border-radius: 4rem; color: #000;}
+      }
+    }
     .col_chk{ width:4.63%;padding-left: 24rem; box-sizing: border-box;}
     .col_main{ width:9%;}
     .col_public, .col_target{ width:6.68%;}
-    .col_registration, .col_occurrence, .col_modify, .col_writer, .col_start, .col_end { width:11.57%;}
+    .col_registration, .col_occurrence, .col_modify, .col_writer, .col_start, .col_end, .col_phone, .col_work { width:11.57%;}
     .col_hits { width:7%;}
     .col_file { width:12.98%;}
     .col_company { width:53.28%;}
@@ -280,16 +286,35 @@ input{
       .col_title { width: 27.25%;}
       .col_type, .col_delete { width: 7%;}
       .col_open, .col_modify, .col_reservation { width:11.57%;}
-      .t_body {
-        .col_delete {
-          .btn {padding: 15rem; border: 1px solid #000; border-radius: 4rem; color: #000;}
-        }
-      }
     }
     &.hashtag_table {
       .col_category { width: 20%; padding-left: 20rem;}
       .col_hashtag { width: 80%;}
     }
+    &.admin_table {
+      .col_registration { padding-left: 20rem;}
+      .col_id, .col_name { width: 8.99%; padding-left: 20rem;}
+      .col_email { width: 19.73%;}
+      .col_state { width: 5%;}
+      .col_department { width: 9%;}
+      .col_menu { width: 30%;}
+    }
+    &.ip_table {
+      .col_category { width: 90%; padding-left: 20rem;}
+      .col_delete { width: 10%;}
+    }
+    &.arrangement_table {
+      .col_name { width: 13.24%; padding-left: 20rem;}
+      .col_date { width: 14.59%;}
+      .col_title { width: 37.5%;}
+    }
+  }
+
+  .ip_address {display: flex; flex-direction: row; gap: 16rem; align-items: center; padding-bottom: 32rem;
+    .write_box { width: 260rem;
+      .write_slot { width: 260rem; justify-content: flex-start; align-items: flex-start; }
+    }
+    .btn {height: max-content; width: 160rem; padding: 16rem 26rem;}
   }
 }
 

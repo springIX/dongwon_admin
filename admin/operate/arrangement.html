@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">게시판 관리</h2>
+      <h2 class="title">운영 관리</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -117,105 +117,36 @@
         <!-- 콘텐츠룸 -->
         <div class="con_wrap">
           <div class="dep2_tab">
-            <a href="introduction.html" class="on">그룹소개 자료실</a>
-            <a href="sustainability.html">지속가능경영 보고서</a>
-            <a href="investment.html">투자정보</a>
-            <a href="notice.html">공지사항</a>
+            <a href="admin.html">관리자 계정</a>
+            <a href="ip.html">접속 IP</a>
+            <a href="arrangement.html" class="on">배치 작업</a>
           </div>
           <div class="board_table">
-            
-            <div class="search_filter_wrap">
-              <!-- 검색어 입력 -->
-              <div class="search_box">
-                  <span class="sub_tit">검색어</span>
-                  <input type="text" class="input_search" placeholder="검색어를 입력해 주세요.">
-              </div>
-            
-              <!-- 발행 기간 -->
-              <div class="date_range">
-                <span class="sub_tit">발행 기간</span>
-                <div>
-                  <input type="date" class="date_start" >
-                  <span>~</span>
-                  <input type="date" class="date_end">
-                </div>
-              </div>
-            
-              <!-- 기간 버튼 -->
-               <div class="period_button_wrap">
-                 <button type="button" class="btn ty_white period_button">1주전</button>
-                 <button type="button" class="btn ty_white period_button">1개월전</button>
-                 <button  type="button" class="btn ty_white period_button">3개월전</button>
-               </div>
-            
-              <!-- 검색 버튼 -->
-              <button type="button" class="btn ty_black btn_search">검색</button>
-            
-              <!-- 새로고침 버튼 -->
-              <button type="button" class="btn btn_refresh">
-                <span></span>
-              </button>
+            <div class="btn_wrap ty_right">
+              <a href="write_html_page.html" class="btn ty_ci">신규 등록</a>
             </div>
-                        
-            <div class="table_top">
-              <div class="title">전체 <span>N</span>개</div>
-              <div class="btn_wrap">
-                <a href="write_introduction.html" class="btn ty_ci">새 포스트 등록</a>
-                <button type="button" class="btn ty_light_gray">삭제</button>
-                <button type="button" class="btn ty_white">공개</button>
-                <button type="button" class="btn ty_white">비공개</button>
-              </div>
-            </div>
-
+            
             <form action="">
               <div class="board_wrap">
-                <div class="table_wrap introduction_table">
+                <div class="table_wrap arrangement_table">
                   <div class="t_head">
                     <ul>
-                      <li class="col_chk"><input type="checkbox" class="chk_all"></li>
-                      <li class="col_main">번호</li>
-                      <li class="col_title">제목</li>
-                      <li class="col_file">첨부파일</li>
-                      <li class="col_public">공개여부</li>
-                      <li class="col_registration">등록일</li>
-                      <li class="col_occurrence">발생일시</li>
-                      <li class="col_modify">수정일</li>
-                      <li class="col_writer">작성자</li>
+                      <li class="col_name">이름</li>
+                      <li class="col_title">설명</li>
+                      <li class="col_date">최종 실행 일시</li>
+                      <li class="col_writer">Issuer</li>
+                      <li class="col_writer">실행이력</li>
+                      <li class="col_writer">수동실행</li>
                     </ul>
                   </div>
                   <div class="t_body">
                     <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">화제의 K-소스! 비비드키친 수출 담당자와 토크 | 반차내고와써요 EP.09</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
-                    </ul>
-                    <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">[D's 플레이어] 국민음료 쿨피스 보유🧃본격 동원 유제품 자랑 대회 🎉</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
-                    </ul>
-                    <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">동원맛.zip: 전국 사업장 맛집 지도 프로젝트｜하이D라디오📣 - 8월</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
+                      <li class="col_name"><a href="">(정도경영) 개인정보 파기</a></li>
+                      <li class="col_title">정도경영을 통해 작성한 개인정보(이름, 휴대폰번호, 이메일)는 2년 후에 파기된다.</li>
+                      <li class="col_date">2025.09.02 00:30</li>
+                      <li class="col_start">Issuer</li>
+                      <li class="col_end"><a href="" class="btn">보기</a></li>
+                      <li class="col_work"><button type="button" class="btn">실행</button></li>
                     </ul>
                   </div>
                 </div>

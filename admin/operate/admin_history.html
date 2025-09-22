@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">게시판 관리</h2>
+      <h2 class="title">관리자 계정</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -116,106 +116,93 @@
       <div id="contents">
         <!-- 콘텐츠룸 -->
         <div class="con_wrap">
-          <div class="dep2_tab">
-            <a href="introduction.html" class="on">그룹소개 자료실</a>
-            <a href="sustainability.html">지속가능경영 보고서</a>
-            <a href="investment.html">투자정보</a>
-            <a href="notice.html">공지사항</a>
-          </div>
           <div class="board_table">
-            
-            <div class="search_filter_wrap">
-              <!-- 검색어 입력 -->
-              <div class="search_box">
-                  <span class="sub_tit">검색어</span>
-                  <input type="text" class="input_search" placeholder="검색어를 입력해 주세요.">
-              </div>
-            
-              <!-- 발행 기간 -->
-              <div class="date_range">
-                <span class="sub_tit">발행 기간</span>
-                <div>
-                  <input type="date" class="date_start" >
-                  <span>~</span>
-                  <input type="date" class="date_end">
-                </div>
-              </div>
-            
-              <!-- 기간 버튼 -->
-               <div class="period_button_wrap">
-                 <button type="button" class="btn ty_white period_button">1주전</button>
-                 <button type="button" class="btn ty_white period_button">1개월전</button>
-                 <button  type="button" class="btn ty_white period_button">3개월전</button>
-               </div>
-            
-              <!-- 검색 버튼 -->
-              <button type="button" class="btn ty_black btn_search">검색</button>
-            
-              <!-- 새로고침 버튼 -->
-              <button type="button" class="btn btn_refresh">
-                <span></span>
-              </button>
-            </div>
+            <div class="sub_tit">관리자 작업 이력</div>
                         
             <div class="table_top">
               <div class="title">전체 <span>N</span>개</div>
               <div class="btn_wrap">
-                <a href="write_introduction.html" class="btn ty_ci">새 포스트 등록</a>
-                <button type="button" class="btn ty_light_gray">삭제</button>
-                <button type="button" class="btn ty_white">공개</button>
-                <button type="button" class="btn ty_white">비공개</button>
+                <a href="admin.html" class="btn ty_light_gray">계정 목록</a>
               </div>
             </div>
-
+            
             <form action="">
               <div class="board_wrap">
-                <div class="table_wrap introduction_table">
+                <div class="table_wrap admin_table">
                   <div class="t_head">
                     <ul>
-                      <li class="col_chk"><input type="checkbox" class="chk_all"></li>
-                      <li class="col_main">번호</li>
-                      <li class="col_title">제목</li>
-                      <li class="col_file">첨부파일</li>
-                      <li class="col_public">공개여부</li>
-                      <li class="col_registration">등록일</li>
-                      <li class="col_occurrence">발생일시</li>
-                      <li class="col_modify">수정일</li>
-                      <li class="col_writer">작성자</li>
+                      <li class="col_registration">일시</li>
+                      <li class="col_modify">ip</li>
+                      <li class="col_hits">결과</li>
+                      <li class="col_menu">메뉴</li>
+                      <li class="col_file">작업</li>
+                      <li class="col_file">대상</li>
+                      <li class="col_file">내용</li>
                     </ul>
                   </div>
                   <div class="t_body">
                     <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">화제의 K-소스! 비비드키친 수출 담당자와 토크 | 반차내고와써요 EP.09</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
                     </ul>
                     <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">[D's 플레이어] 국민음료 쿨피스 보유🧃본격 동원 유제품 자랑 대회 🎉</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
                     </ul>
                     <ul>
-                      <li class="col_chk"><input type="checkbox"></li>
-                      <li class="col_main">1</li>
-                      <li class="col_title"><a href="">동원맛.zip: 전국 사업장 맛집 지도 프로젝트｜하이D라디오📣 - 8월</a></li>
-                      <li class="col_file"><a href="files/test.pdf" download>동원그룹.pdf</a></li>
-                      <li class="col_public">공개</li>
-                      <li class="col_registration">2024. 02. 26</li>
-                      <li class="col_occurrence">2025.01.20 00:00​</li>
-                      <li class="col_modify">2024. 02. 26</li>
-                      <li class="col_writer">super admin</li>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
+                    </ul>
+                    <ul>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
+                    </ul>
+                    <ul>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
+                    </ul>
+                    <ul>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
+                    </ul>
+                    <ul>
+                      <li class="col_registration">2025.01.20.20 00:00​​</li>
+                      <li class="col_modify">220.118.7.5</li>
+                      <li class="col_hits">성공</li>
+                      <li class="col_menu">포스트 목록 조회</li>
+                      <li class="col_file">포스트 관리</li>
+                      <li class="col_file">2202</li>
+                      <li class="col_file">-</li>
                     </ul>
                   </div>
                 </div>
