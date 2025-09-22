@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">계열사 관리</h2>
+      <h2 class="title">배치 작업</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -115,99 +115,68 @@
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
         <!-- 오피니언 -->
-        <div class="con_wrap max_1000">
+        <div class="con_wrap">
           <div class="write_inner">
             <form action="">
-              <p class="write_tit">계열사 등록</p>
+              <p class="write_tit">배치 작업 로그</p>
 
               <div class="write_wrap">
-                <div class="write_box">
-                  <p class="tit imp">Code( url )</p>
-                  <input type="text" maxlength="100" class="write_slot" value="/dongwon-dearfood" readonly>
-                </div>
+                <ul class="write_box_ty2">
+                  <li>
+                    <p class="tit bd_right">시작 시간</p>
+                    <span>2025.09.02 00:30:39</span>
+                  </li>
+                  <li>
+                    <p class="tit bd_right">완료 시간</p>
+                    <span>2025.09.02 00:30:39</span>
+                  </li>
+                  <li>
+                    <p class="tit">Issuer</p>
+                    <span>scheduler</span>
+                  </li>
+                </ul>
 
-                <div class="write_box">
-                  <p class="tit imp">계열사명</p>
-                  <input type="text" maxlength="100" class="write_slot" value="동원디어푸드" required>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit imp">내용</p>
-                  <textarea class="write_slot" required></textarea>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Section( head )</p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Section( bodyClass ) </p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Section( last )</p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box ty_half ty_indent">
-                  <p class="tit">이미지 관리</p>
-                  <label class="file_upload">
-                    <span class="write_slot file_name"></span>
-                    <input type="file" hidden required></input>
-                    <div class="write_slot file_btn">파일 추가</div>
-                  </label>
-                  <div class="thumb_box"></div>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Page Title( seo )</p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Page Description( seo )</p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">Page Image( seo )</p>
-                  <input type="text" maxlength="100" class="write_slot">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit imp">공개 여부</p>
-                  <div class="list_check">
-                    <label>
-                      <input type="radio" name="public" checked>
-                      <span>공개</span>
-                    </label>
-                    <label>
-                      <input type="radio" name="public">
-                      <span>비공개</span>
-                    </label>
-                  </div>
-                </div>
-
+                <ul class="write_box_ty2">
+                  <li class="bd_right">
+                    <p class="tit">시간</p>
+                    <span></span>
+                  </li>
+                  <li>
+                    <p class="tit">참조 ID</p>
+                    <span></span>
+                  </li>
+                  <li class="bd_right">
+                    <p class="tit">결과</p>
+                    <span></span>
+                  </li>
+                  <li>
+                    <p class="tit">Type</p>
+                    <span></span>
+                  </li>
+                  <li>
+                    <p class="tit">Status</p>
+                    <span></span>
+                  </li>
+                </ul>
               </div>
               <div class="btn_wrap">
-                <a href="" class="btn back_btn ty_gray">취소</a>
-                <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
+                <a href="" class="btn back_btn ty_gray">배치 목록</a>
+                <input type="submit" value="배치 실행 이력" class="btn ty_black" data-btn="pop_save">
               </div>
             </form>
           </div>
         </div>
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+
     </main>
   </div>
 
   <script src="/admin/src/js/jquery.js"></script>
   <script src="/admin/src/js/admin.js"></script>
   <script>
-    $('#lnb nav > ul > li').eq(3).addClass('on');
-    $('#lnb nav > ul > li').eq(3).find('.dep2 li').eq(0).addClass('on');
+    $('#lnb nav > ul > li').eq(4).addClass('on');
+    $('#lnb nav > ul > li').eq(4).find('.dep2 li').eq(2).addClass('on');
   </script>
 </body>
 

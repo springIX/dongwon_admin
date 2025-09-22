@@ -876,11 +876,19 @@ input[type=text]:read-only {
 .write_box .dsc + .dsc {
   margin-top: 6rem;
 }
+.write_box .dsc a, .write_box .dsc button {
+  display: inline;
+  text-decoration: underline;
+  color: #266BFF;
+}
 .write_box.ty_half {
   width: calc(50% - 12rem);
 }
 .write_box.ty_half.ty_indent {
   margin-right: 200rem;
+}
+.write_box.ty_half_block {
+  padding-right: calc(50% + 12rem);
 }
 .write_box.caution .write_slot {
   border-color: #ff0000;
@@ -890,6 +898,7 @@ input[type=text]:read-only {
 }
 .write_box textarea {
   padding: 24rem !important;
+  height: 260rem;
 }
 .write_box .thumb_box {
   display: none;
@@ -897,6 +906,45 @@ input[type=text]:read-only {
   height: 239rem;
   background-color: #eee;
   margin-top: 12rem;
+}
+
+.write_box_ty2 {
+  display: flex;
+  border: 1px solid #d9d9d9;
+  border-radius: 4rem;
+  width: 100%;
+}
+.write_box_ty2 + .write_box_ty2 {
+  margin-top: 32rem;
+}
+.write_box_ty2 + .write_box_ty2 li {
+  width: 20%;
+}
+.write_box_ty2 + .write_box_ty2 li .tit {
+  width: auto;
+}
+.write_box_ty2 + .write_box_ty2 li input {
+  padding: 0;
+}
+.write_box_ty2 .bd_right {
+  border-right: 1px solid #d9d9d9;
+}
+.write_box_ty2 input {
+  width: 100%;
+}
+.write_box_ty2 li {
+  width: 100%;
+  display: flex;
+  height: 60rem;
+  line-height: 60rem;
+}
+.write_box_ty2 li > * {
+  padding: 0 24rem;
+}
+.write_box_ty2 li .tit {
+  flex-shrink: 0;
+  font-weight: 700;
+  width: 140rem;
 }
 
 select {
@@ -1009,6 +1057,9 @@ textarea {
 .popup.size_l {
   width: 540rem;
 }
+.popup.size_xl {
+  width: 1080rem;
+}
 .popup .popup_tit {
   display: block;
   font-size: clamp(10px, 18rem, 999rem);
@@ -1020,11 +1071,15 @@ textarea {
 .popup .info {
   font-size: clamp(10px, 18rem, 999rem);
   line-height: 1.6;
+  max-height: calc(100vh - 300rem);
+  overflow-y: auto;
 }
 .popup .info2 {
   font-size: clamp(10px, 12rem, 999rem);
   color: #aeaeae;
   line-height: 1.5;
+  max-height: calc(100vh - 300rem);
+  overflow-y: auto;
 }
 .popup.pop_pw_find .info {
   margin: 33rem 0 10rem;
@@ -1159,6 +1214,38 @@ textarea {
   position: absolute;
   right: 0;
   top: 7rem;
+}
+.popup.pop_cron strong {
+  display: block;
+}
+.popup.pop_cron .mb_24 {
+  margin-bottom: 24rem;
+}
+.popup.pop_cron .close_btn {
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  right: 21rem;
+  top: 21rem;
+  background: url(../images/ico_close.svg) no-repeat center center/contain;
+}
+.popup.pop_cron .code_box {
+  display: flex;
+  gap: 40rem;
+  margin: 24rem 0;
+}
+.popup.pop_cron .code_box strong {
+  margin-bottom: 8rem;
+}
+.popup.pop_cron .code_box ul li {
+  width: max-content;
+  padding: 2rem 8rem;
+  color: #C7254E;
+  background-color: #F9F2F4;
+  border-radius: 4rem;
+}
+.popup.pop_cron .code_box ul li + li {
+  margin-top: 8rem;
 }
 
 /******** TOAST POPUP ********/
