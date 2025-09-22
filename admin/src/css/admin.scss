@@ -137,6 +137,7 @@ $hd : 80rem;
   &.lock{ touch-action: none; pointer-events: none}
 }
 .max_1000{ max-width: 1000px;}
+.max_490{ max-width: 490px;}
 
 // BTN
 .btn{ @include font-size(14rem); display: inline-block; text-align: center; padding: 13rem 26rem; border-radius: 4rem; cursor: pointer; color: $color-white;  border: 1px solid $black4;
@@ -351,6 +352,7 @@ input{
   }
   .dsc{ margin-top: 12rem; @include font-size(12rem); color: #666; font-weight: 400;
     &.gray{ color: #666 !important;}
+    + .dsc{ margin-top: 6rem;}
   }
   &.ty_half{ width: calc(50% - 12rem);
     &.ty_indent{ margin-right: 200rem;}

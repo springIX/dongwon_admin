@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">해시태그 관리</h2>
+      <h2 class="title">관리자 계정</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -115,32 +115,41 @@
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
         <!-- 오피니언 -->
-        <div class="con_wrap max_1000">
+        <div class="con_wrap max_490">
           <div class="write_inner">
             <form action="">
-              <p class="write_tit">공지사항 해시태그</p>
+              <p class="write_tit">관리자 계정 생성</p>
 
               <div class="write_wrap">
-                <div class="write_box">
-                  <p class="tit">카테고리 내 전체 해시태그</p>
-                  <p>공지사항,동원그룹,운영정책,궁금증,문의,테크팩솔루션,미디어동원,동원팜스</p>
+                <div class="write_box caution">
+                  <p class="tit imp">아이디</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc gray">영문 소문자, 숫자만 사용하여 4자 이상으로 만드십시오.</p>
+                  <p class="dsc">필수 입력값입니다.</p>
+                </div>
+
+                <div class="write_box caution">
+                  <p class="tit imp">이름</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                  <p class="dsc">필수 입력값입니다.</p>
                 </div>
 
                 <div class="write_box">
-                  <p class="tit">추가 해시태그</p>
-                  <input type="text" maxlength="100" class="write_slot" placeholder="추가할 태그를 입력해 주세요.">
+                  <p class="tit">부서</p>
+                  <input type="text" maxlength="100" class="write_slot">
                 </div>
 
-                <div class="write_box">
-                  <p class="tit">삭제 해시태그</p>
-                  <input type="text" maxlength="100" class="write_slot" placeholder="삭제할 태그를 입력해 주세요.">
+                <div class="write_box caution">
+                  <p class="tit">이메일</p>
+                  <input type="text" maxlength="100" class="write_slot">
+                  <p class="dsc">이메일 주소가 잘못되었습니다.</p>
                 </div>
 
-                <div class="write_box">
-                  <p class="tit imp">등록 안내</p>
-                  &middot; 추가 해시태그/삭제 해시태그 모두 기입 시 삭제 해시태그로 간주하여 노출되지 않습니다.
+                <div class="write_box caution">
+                  <p class="tit imp">전화번호</p>
+                  <input type="text" maxlength="100" class="write_slot" required>
+                  <p class="dsc">필수 입력값입니다.</p>
                 </div>
-
               </div>
               <div class="btn_wrap">
                 <a href="" class="btn back_btn ty_gray">취소</a>
@@ -157,8 +166,8 @@
   <script src="/admin/src/js/jquery.js"></script>
   <script src="/admin/src/js/admin.js"></script>
   <script>
-    $('#lnb nav > ul > li').eq(3).addClass('on');
-    $('#lnb nav > ul > li').eq(3).find('.dep2 li').eq(2).addClass('on');
+    $('#lnb nav > ul > li').eq(4).addClass('on');
+    $('#lnb nav > ul > li').eq(4).find('.dep2 li').eq(0).addClass('on');
   </script>
 </body>
 

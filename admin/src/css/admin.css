@@ -234,6 +234,10 @@
   max-width: 1000px;
 }
 
+.max_490 {
+  max-width: 490px;
+}
+
 .btn {
   font-size: clamp(10px, 14rem, 999rem);
   display: inline-block;
@@ -781,6 +785,9 @@ input[type=text]:read-only {
 }
 .write_box .dsc.gray {
   color: #666 !important;
+}
+.write_box .dsc + .dsc {
+  margin-top: 6rem;
 }
 .write_box.ty_half {
   width: calc(50% - 12rem);

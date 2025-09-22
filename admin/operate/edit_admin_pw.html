@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">해시태그 관리</h2>
+      <h2 class="title">관리자 계정</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -115,35 +115,33 @@
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
         <!-- 오피니언 -->
-        <div class="con_wrap max_1000">
+        <div class="con_wrap max_490">
           <div class="write_inner">
             <form action="">
-              <p class="write_tit">공지사항 해시태그</p>
+              <p class="write_tit">계정 비밀번호 변경</p>
 
               <div class="write_wrap">
-                <div class="write_box">
-                  <p class="tit">카테고리 내 전체 해시태그</p>
-                  <p>공지사항,동원그룹,운영정책,궁금증,문의,테크팩솔루션,미디어동원,동원팜스</p>
+                <div class="write_box password_chk caution">
+                  <p class="tit imp">비밀번호</p>
+                  <label class="write_slot password">
+                    <input type="password" required>
+                    <button type="button" class="pw_show_btn"></button>
+                  </label>
+                  <p class="dsc gray">12자 이상, 영문자/숫자/특수기호 모두 포함. 3회 이상 연속/중복 금지</p>
+                  <p class="dsc">비밀번호를 입력해 주세요.</p>
                 </div>
-
-                <div class="write_box">
-                  <p class="tit">추가 해시태그</p>
-                  <input type="text" maxlength="100" class="write_slot" placeholder="추가할 태그를 입력해 주세요.">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">삭제 해시태그</p>
-                  <input type="text" maxlength="100" class="write_slot" placeholder="삭제할 태그를 입력해 주세요.">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit imp">등록 안내</p>
-                  &middot; 추가 해시태그/삭제 해시태그 모두 기입 시 삭제 해시태그로 간주하여 노출되지 않습니다.
+                <div class="write_box password_chk caution">
+                  <p class="tit imp">비밀번호 확인</p>
+                  <label class="write_slot password">
+                    <input type="password" required>
+                    <button type="button" class="pw_show_btn"></button>
+                  </label>
+                  <p class="dsc">비밀번호 값이 같아야 합니다.</p>
                 </div>
 
               </div>
               <div class="btn_wrap">
-                <a href="" class="btn back_btn ty_gray">취소</a>
+                <!-- <a href="" class="btn back_btn ty_gray">취소</a> -->
                 <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
               </div>
             </form>
@@ -151,14 +149,24 @@
         </div>
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
+
+      <!-- POPUP POPUP POPUP POPUP -->
+      <!-- POPUP : 비밀번호 변경완료 -->
+      <div class="popup pop_save size_s" data-toggle="pop_save">
+        <p class="info">등록한 이메일로 임시비밀번호가 발급되었습니다.</p>
+        <div class="btn_wrap ty_right">
+          <a href="/admin/login/" class="btn ty_black">확인</a>
+        </div>
+      </div>
+      <!-- //POPUP POPUP POPUP POPUP -->
     </main>
   </div>
 
   <script src="/admin/src/js/jquery.js"></script>
   <script src="/admin/src/js/admin.js"></script>
   <script>
-    $('#lnb nav > ul > li').eq(3).addClass('on');
-    $('#lnb nav > ul > li').eq(3).find('.dep2 li').eq(2).addClass('on');
+    $('#lnb nav > ul > li').eq(4).addClass('on');
+    $('#lnb nav > ul > li').eq(4).find('.dep2 li').eq(0).addClass('on');
   </script>
 </body>
 
