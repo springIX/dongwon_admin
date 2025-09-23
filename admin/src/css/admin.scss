@@ -140,7 +140,7 @@ $hd : 80rem;
 .max_490{ max-width: 490px;}
 
 // BTN
-.btn{ @include font-size(14rem); display: inline-block; text-align: center; padding: 13rem 26rem; border-radius: 4rem; cursor: pointer; color: $color-white;  border: 1px solid $black4;
+.btn{ @include font-size(14rem); display: inline-block; text-align: center; padding: 15rem 26rem; border-radius: 4rem; cursor: pointer; color: $color-white;  border: 1px solid $black4;
   &.ty_white{ background-color: $color-white; color: $color-black;}
   &.ty_ci{ background-color: $color-ci;}
   &.ty_gray{ background-color: #717171;}
@@ -162,17 +162,18 @@ $hd : 80rem;
   .search_box {display: flex; gap: 8rem; flex-direction: column; justify-content: flex-start; align-items: flex-start;
     .sub_tit { @include font-size(12rem); color: #111; white-space: nowrap;}
   }
-  .input_search { width: 220rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem;
+  .input_search { width: 220rem; padding: 15rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem;
   }
   .date_range { display: flex; flex-direction: column; gap: 6rem;
-    input { width: 165rem; padding: 13rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
+    input { width: 165rem; padding: 14rem 26rem; border: 1px solid #E1E1E1; border-radius: 4rem; }
     .sub_tit { @include font-size(12rem); color: #111; white-space: nowrap;}
     span { @include font-size(14rem); color: #666; }
     .date_picker_btn { width: 32rem; height: 32rem; background: url(/admin/src/images/ico_calendar.svg)no-repeat center center / contain; cursor: pointer;}
+    .date_start, .date_end {cursor: pointer;}
   }
   button{border: 1px solid #E1E1E1;}
   .btn_search {width: 160rem;}
-  .btn_refresh {vertical-align: middle; padding: 12rem; border: 1px solid #000;;
+  .btn_refresh {vertical-align: middle; padding: 14rem; border: 1px solid #000;;
   span {width: 18rem; height: 18rem; background: url(/admin/src/images/ico_refresh.svg) no-repeat center/contain; display: block;}
   }
   .period_button_wrap {display: flex; gap: 12rem;
@@ -276,7 +277,9 @@ input{
       }
     }
     &.introduction_table {
-      .col_title { width: 20.44%;}
+      .col_title { width: 19.44%;}
+      .col_main { width: 4%;}
+      .col_category { width: 6%;}
     }
     &.banner_table {
       .col_title { width: 50%;}
@@ -307,9 +310,12 @@ input{
       .col_name { width: 13.24%; padding-left: 20rem;}
       .col_date { width: 14.59%;}
       .col_title { width: 37.5%;}
-      .col_work { width: 12.15%; padding-left: 20rem;}
+      .col_work { width: 11.5%; padding-left: 20rem;}
+    }
+    &.arrangement_history_table {
       .col_start, .col_end { width: 26.41%;}
       .col_processing, .col_issuer, .col_log { width: 11.63%;}
+
     }
   }
 

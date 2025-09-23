@@ -242,7 +242,7 @@
   font-size: clamp(10px, 14rem, 999rem);
   display: inline-block;
   text-align: center;
-  padding: 13rem 26rem;
+  padding: 15rem 26rem;
   border-radius: 4rem;
   cursor: pointer;
   color: #ffffff;
@@ -315,7 +315,7 @@
 }
 .search_filter_wrap .input_search {
   width: 220rem;
-  padding: 13rem 26rem;
+  padding: 15rem 26rem;
   border: 1px solid #E1E1E1;
   border-radius: 4rem;
 }
@@ -326,7 +326,7 @@
 }
 .search_filter_wrap .date_range input {
   width: 165rem;
-  padding: 13rem 26rem;
+  padding: 14rem 26rem;
   border: 1px solid #E1E1E1;
   border-radius: 4rem;
 }
@@ -345,6 +345,9 @@
   background: url(/admin/src/images/ico_calendar.svg) no-repeat center center/contain;
   cursor: pointer;
 }
+.search_filter_wrap .date_range .date_start, .search_filter_wrap .date_range .date_end {
+  cursor: pointer;
+}
 .search_filter_wrap button {
   border: 1px solid #E1E1E1;
 }
@@ -353,7 +356,7 @@
 }
 .search_filter_wrap .btn_refresh {
   vertical-align: middle;
-  padding: 12rem;
+  padding: 14rem;
   border: 1px solid #000;
 }
 .search_filter_wrap .btn_refresh span {
@@ -573,7 +576,13 @@ input[type=text]:read-only {
   border-bottom: none;
 }
 .board_table .table_wrap.introduction_table .col_title {
-  width: 20.44%;
+  width: 19.44%;
+}
+.board_table .table_wrap.introduction_table .col_main {
+  width: 4%;
+}
+.board_table .table_wrap.introduction_table .col_category {
+  width: 6%;
 }
 .board_table .table_wrap.banner_table .col_title {
   width: 50%;
@@ -635,13 +644,13 @@ input[type=text]:read-only {
   width: 37.5%;
 }
 .board_table .table_wrap.arrangement_table .col_work {
-  width: 12.15%;
+  width: 11.5%;
   padding-left: 20rem;
 }
-.board_table .table_wrap.arrangement_table .col_start, .board_table .table_wrap.arrangement_table .col_end {
+.board_table .table_wrap.arrangement_history_table .col_start, .board_table .table_wrap.arrangement_history_table .col_end {
   width: 26.41%;
 }
-.board_table .table_wrap.arrangement_table .col_processing, .board_table .table_wrap.arrangement_table .col_issuer, .board_table .table_wrap.arrangement_table .col_log {
+.board_table .table_wrap.arrangement_history_table .col_processing, .board_table .table_wrap.arrangement_history_table .col_issuer, .board_table .table_wrap.arrangement_history_table .col_log {
   width: 11.63%;
 }
 .board_table .ip_address {

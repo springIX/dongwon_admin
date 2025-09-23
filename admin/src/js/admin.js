@@ -167,4 +167,13 @@ $(function () {
       }
     });
   });
+  
+  /********* 달력 *********/
+  document.querySelector('.date_start').addEventListener('click', function() {
+      this.showPicker();
+  });
+  
+  document.querySelector('.date_end').addEventListener('click', function() {
+      this.showPicker();
+  });
 });
