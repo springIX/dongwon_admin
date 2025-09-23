@@ -175,10 +175,12 @@
 #lnb nav > ul > li .dep2 li.on {
   color: #0065BD;
 }
-#lnb nav > ul > li .dep2 li.close {
-  touch-action: none;
-  pointer-events: none;
+#lnb nav > ul > li .dep2 li.dep3 {
+  font-size: 12px;
   color: #666;
+}
+#lnb nav > ul > li .dep2 li.dep3 + .dep3 {
+  margin-top: 12px;
 }
 #lnb .acoount_menu ul li {
   margin-top: 28rem;

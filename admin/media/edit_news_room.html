@@ -39,7 +39,7 @@
         </a>
         <button class="all_menu_btn"></button>
       </div>
-      <h2 class="title">뉴스&오피니언</h2>
+      <h2 class="title">그룹소개 자료실</h2>
       <div class="account_info">
         <a href="/admin/account/" class="name">홍길동<span>(admin1234)</span> 님</a>
         <a href="/admin/login/" class="btn ty_white logout_btn">로그아웃</a>
@@ -71,11 +71,11 @@
                 <li><a href="/admin/board/introduction.html">그룹소개 자료실</a></li>
                 <li><a href="/admin/board/sustainability.html">지속가능경영 보고서</a></li>
                 <li><a href="/admin/board/investment.html">투자정보</a></li>
-                <li class="close"><a href="/admin/board/disclosure.html">공시정보</a></li>
-                <li class="close"><a href="/admin/board/announcement.html">공고</a></li>
-                <li class="close"><a href="/admin/board/management.html">경영자료</a></li>
-                <li class="close"><a href="/admin/board/governance.html">지배구조보고서</a></li>
-                <li class="close"><a href="/admin/board/ir.html">IR자료실</a></li>
+                <li class="dep3"><a href="/admin/board/disclosure.html">공시정보</a></li>
+                <li class="dep3"><a href="/admin/board/announcement.html">공고</a></li>
+                <li class="dep3"><a href="/admin/board/management.html">경영자료</a></li>
+                <li class="dep3"><a href="/admin/board/governance.html">지배구조보고서</a></li>
+                <li class="dep3"><a href="/admin/board/ir.html">IR자료실</a></li>
                 <li><a href="/admin/board/notice.html">공지사항</a></li>
               </ul>
             </li>
@@ -115,128 +115,101 @@
       <!-- CONTENTS CONTENTS CONTENTS CONTENTS -->
       <div id="contents">
         <!-- 오피니언 -->
-        <div class="con_wrap">
+        <div class="con_wrap max_1000">
           <div class="write_inner">
             <form action="">
-              <div class="dep2_tab ty_full">
-                <a href="write_news_room.html" class="on">데일리 뉴스</a>
-                <a href="write_opinion.html">오피니언</a>
-              </div>
+              <p class="write_tit">미디어룸 관리</p>
 
               <div class="write_wrap">
+                <div class="write_box">
+                  <p class="tit imp">제목</p>
+                  <input type="text" maxlength="100" class="write_slot" value="미디어룸 관리 게시글 상세 화면입니다." required>
+                  <p class="dsc gray">최대 50자까지 입력 가능 (0/50)</p>
+                </div>
+
+                <div class="write_box ty_half ty_indent">
+                  <p class="tit imp">썸네일</p>
+                  <label class="file_upload">
+                    <span class="write_slot file_name">file name.jpg</span>
+                    <input type="file" hidden required></input>
+                    <div class="write_slot file_btn">파일 추가</div>
+                  </label>
+                  <p class="dsc gray">최대 1개까지 업로드 가능 (100MB 이하)​</p>
+                  <div class="thumb_box"></div>
+                </div>
 
                 <div class="write_box">
-                  <p class="tit imp">필수 선택 사항</p>
+                  <p class="tit">메인 영상 URL</p>
+                  <input type="text" class="write_slot" placeholder="http://" value="http://youtu.be">
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">내용</p>
+                  <div class="editor_area"></div>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">태그</p>
+                  <input type="text" class="write_slot" placeholder="태그를 입력해 주세요."></input>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit">Meta Description</p>
+                  <input type="text" class="write_slot"></input>
+                </div>
+
+                <div class="write_box">
+                  <p class="tit imp">댓글 허용 여부</p>
                   <div class="list_check">
                     <label>
-                      <input type="checkbox">
-                      <span>유료</span>
+                      <input type="radio" name="comment" checked>
+                      <span>허용</span>
                     </label>
                     <label>
-                      <input type="checkbox">
-                      <span>무료</span>
+                      <input type="radio" name="comment">
+                      <span>미허용</span>
                     </label>
                   </div>
                 </div>
 
-                <div class="write_box ty_half ty_indent">
-                  <p class="tit imp">분류</p>
-                  <select class="write_slot">
-                    <option value="">제도•정책</option>
-                    <option value="">여신•투자</option>
-                    <option value="">탄소시장</option>
-                    <option value="">평가•이니셔티브</option>
-                    <option value="">기후테크</option>
-                    <option value="">디지털•솔루션</option>
-                  </select>
-                </div>
-
-
-                <div class="write_box">
-                  <p class="tit imp">제목</p>
-                  <input type="text" maxlength="100" class="write_slot" required>
-                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit imp">외부 링크</p>
-                  <input type="text" class="write_slot" placeholder="http://" required>
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">대체 링크</p>
-                  <input type="text" class="write_slot" placeholder="http://">
-                </div>
-
-                <div class="write_box">
-                  <p class="tit">3줄 요약</p>
-                  <textarea class="write_slot" maxlength="100"></textarea>
-                  <p class="dsc">100자까지만 입력가능(한글기준)</p>
-                </div>
-
                 <div class="write_box ty_half">
-                  <p class="tit imp">출처</p>
-                  <input type="text" class="write_slot" required>
+                  <p class="tit imp">발행 일자</p>
+                  <input type="datetime-local" class="write_slot"></input>
                 </div>
 
-
-                <div class="write_box ty_half">
-                  <p class="tit imp">발행일</p>
-                  <input type="date" class="write_slot" required></input>
+                <div class="write_box">
+                  <p class="tit imp">공개 여부</p>
+                  <div class="list_check">
+                    <label>
+                      <input type="radio" name="public" checked>
+                      <span>공개</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="public">
+                      <span>비공개</span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="write_box ty_half">
-                  <p class="tit imp">이미지</p>
-                  <label class="write_slot file_upload ty_img">
-                    <span class="file_name"></span>
-                    <input type="file" hidden required></input>
-                  </label>
-                  <p class="dsc">* PNG, JPG, GIF 파일(270x203픽셀 이상)만 업로드 가능합니다.</p>
-                </div>
               </div>
-              <div class="btn_wrap ty_right">
+              <div class="btn_wrap">
                 <a href="" class="btn back_btn ty_gray">취소</a>
-                <input type="submit" value="저장" class="btn ty_ci" data-btn="pop_save">
+                <input type="submit" value="저장" class="btn ty_black" data-btn="pop_save">
               </div>
             </form>
           </div>
         </div>
-        <!-- TOAST TOAST TOAST TOAST -->
-        <!-- TOAST : 필수 기입 사항 입력되지 않았을 때 -->
-        <div class="toast_popup" data-toggle="toast_imp">
-          <div class="txt_box">
-            <span class="ico"></span>
-            <p>필수 기입 사항이 입력되지 않았습니다. 다시 확인해 주세요.</p>
-          </div>
-          <button type="button" class="close_btn" data-btn="toast_imp"></button>
-        </div>
-        <!-- //TOAST TOAST TOAST TOAST -->
       </div>
       <!-- //CONTENTS CONTENTS CONTENTS CONTENTS -->
-
-      <!-- POPUP POPUP POPUP POPUP -->
-      <!-- POPUP : 저장 완료 -->
-      <div class="popup pop_save size_s" data-toggle="pop_save">
-        <p class="info">성공적으로 저장되었습니다</p>
-        <div class="btn_wrap ty_right">
-          <a href="/admin/login/" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-
-      <!-- POPUP : 작성페이지에서 작성 중 이탈할 때 -->
-      <div class="popup pop_save size_l" data-toggle="pop_cancel">
-        <p class="info">저장되지 않은 내용이 있습니다. <br>현재 작성 중인 내용을 저장하지 않고 목록으로 이동하시겠습니까?</p>
-        <div class="btn_wrap ty_right">
-          <button type="button" class="btn ty_white popup_close">취소</button>
-          <a href="" class="btn ty_ci">확인</a>
-        </div>
-      </div>
-      <!-- //POPUP POPUP POPUP POPUP -->
     </main>
   </div>
 
   <script src="/admin/src/js/jquery.js"></script>
   <script src="/admin/src/js/admin.js"></script>
+  <script>
+    $('#lnb nav > ul > li').eq(0).addClass('on');
+    $('#lnb nav > ul > li').eq(0).find('.dep2 li').eq(0).addClass('on');
+  </script>
 </body>
 
 </html>

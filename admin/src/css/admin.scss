@@ -94,7 +94,9 @@ $hd : 80rem;
           li{
             + li{ margin-top: 16rem;}
             &.on{ color: $color-ci;}
-            &.close{ touch-action: none; pointer-events: none; color: #666;}
+            &.dep3{ font-size: 12px; color: #666;
+              + .dep3{ margin-top: 12px;}
+            }
           }
         }
       }
